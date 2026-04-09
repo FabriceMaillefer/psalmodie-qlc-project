@@ -1,0 +1,5 @@
+# QLC+ : sauvegardes automatiques et fichiers temporaires
+*.autosave.qxw
+*.qxw.bak
+*~
+.directory
