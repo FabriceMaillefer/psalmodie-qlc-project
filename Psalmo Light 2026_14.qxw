@@ -1,0 +1,1486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Workspace>
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FIXANDFUNC">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>5.2.1</Version>
+  <Author>fabrice_psa</Author>
+ </Creator>
+ <Engine>
+  <InputOutputMap>
+   <BeatGenerator BeatType="Internal" BPM="120"/>
+   <NetworkServer Type="Web" AutoStart="True"/>
+   <Universe Name="Psalmo" ID="0">
+    <Output Plugin="ArtNet" UID="192.168.1.104" Line="8">
+     <PluginParameters outputIP="192.168.1.20" outputUni="1"/>
+    </Output>
+   </Universe>
+   <Universe Name="USB (Salle)" ID="1">
+    <Output Plugin="DMX USB" UID="DMX USB PRO - DMX Output 1 - (S/N: EN507410)" Line="0">
+     <PluginParameters UniverseChannels="125"/>
+    </Output>
+   </Universe>
+   <Universe Name="MIDI Input" ID="2">
+    <Input Plugin="MIDI" UID="X-TOUCH COMPACT" Line="0"/>
+    <Feedback Plugin="MIDI" UID="X-TOUCH COMPACT" Line="1"/>
+   </Universe>
+  </InputOutputMap>
+  <Fixture>
+   <Manufacturer>Showtec</Manufacturer>
+   <Model>Spectral M800 IPX</Model>
+   <Mode>AR1.D</Mode>
+   <ID>0</ID>
+   <Name>Spot RGB A</Name>
+   <Universe>0</Universe>
+   <Address>99</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Chauvet</Manufacturer>
+   <Model>ColorBand Pix IP</Model>
+   <Mode>4 Channel</Mode>
+   <ID>2</ID>
+   <Name>Bar Jardin 03</Name>
+   <Universe>0</Universe>
+   <Address>59</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Chauvet</Manufacturer>
+   <Model>ColorBand Pix IP</Model>
+   <Mode>4 Channel</Mode>
+   <ID>3</ID>
+   <Name>Bar Jardin 02</Name>
+   <Universe>0</Universe>
+   <Address>54</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Chauvet</Manufacturer>
+   <Model>ColorBand Pix IP</Model>
+   <Mode>4 Channel</Mode>
+   <ID>4</ID>
+   <Name>Bar Fond 01</Name>
+   <Universe>0</Universe>
+   <Address>64</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>7</ID>
+   <Name>Face Salle Chorale 3</Name>
+   <Universe>1</Universe>
+   <Address>6</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Chauvet</Manufacturer>
+   <Model>ColorBand Pix IP</Model>
+   <Mode>4 Channel</Mode>
+   <ID>9</ID>
+   <Name>Bar Fond 02</Name>
+   <Universe>0</Universe>
+   <Address>69</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Chauvet</Manufacturer>
+   <Model>ColorBand Pix IP</Model>
+   <Mode>4 Channel</Mode>
+   <ID>10</ID>
+   <Name>Bar Fond 03</Name>
+   <Universe>0</Universe>
+   <Address>74</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Chauvet</Manufacturer>
+   <Model>ColorBand Pix IP</Model>
+   <Mode>4 Channel</Mode>
+   <ID>11</ID>
+   <Name>Bar Fond 04</Name>
+   <Universe>0</Universe>
+   <Address>79</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Chauvet</Manufacturer>
+   <Model>ColorBand Pix IP</Model>
+   <Mode>4 Channel</Mode>
+   <ID>12</ID>
+   <Name>Bar Cour 03</Name>
+   <Universe>0</Universe>
+   <Address>84</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Chauvet</Manufacturer>
+   <Model>ColorBand Pix IP</Model>
+   <Mode>4 Channel</Mode>
+   <ID>13</ID>
+   <Name>Bar Jardin 01</Name>
+   <Universe>0</Universe>
+   <Address>49</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Chauvet</Manufacturer>
+   <Model>ColorBand Pix IP</Model>
+   <Mode>4 Channel</Mode>
+   <ID>14</ID>
+   <Name>Bar Cour 01</Name>
+   <Universe>0</Universe>
+   <Address>94</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Chauvet</Manufacturer>
+   <Model>ColorBand Pix IP</Model>
+   <Mode>4 Channel</Mode>
+   <ID>15</ID>
+   <Name>Bar Cour 02</Name>
+   <Universe>0</Universe>
+   <Address>89</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>16</ID>
+   <Name>Face Salle Instrument 1</Name>
+   <Universe>1</Universe>
+   <Address>1</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>17</ID>
+   <Name>Generic Dimmer [18]</Name>
+   <Universe>1</Universe>
+   <Address>55</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>19</ID>
+   <Name>Face Salle Chorale 1</Name>
+   <Universe>1</Universe>
+   <Address>2</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>21</ID>
+   <Name>Face Salle Solo 1</Name>
+   <Universe>1</Universe>
+   <Address>0</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>22</ID>
+   <Name>Face Salle Solo 2</Name>
+   <Universe>1</Universe>
+   <Address>3</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>23</ID>
+   <Name>Generic Dimmer [24]</Name>
+   <Universe>1</Universe>
+   <Address>56</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>24</ID>
+   <Name>Face Salle Chorale 2</Name>
+   <Universe>1</Universe>
+   <Address>5</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>27</ID>
+   <Name>Generic Dimmer [28]</Name>
+   <Universe>1</Universe>
+   <Address>57</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>28</ID>
+   <Name>Generic Dimmer [29]</Name>
+   <Universe>1</Universe>
+   <Address>58</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>29</ID>
+   <Name>Generic Dimmer [30]</Name>
+   <Universe>1</Universe>
+   <Address>11</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>30</ID>
+   <Name>Generic Dimmer [31]</Name>
+   <Universe>1</Universe>
+   <Address>12</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>31</ID>
+   <Name>Generic Dimmer [32]</Name>
+   <Universe>1</Universe>
+   <Address>14</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>32</ID>
+   <Name>Generic Dimmer [33]</Name>
+   <Universe>1</Universe>
+   <Address>13</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>33</ID>
+   <Name>Generic Dimmer [34]</Name>
+   <Universe>1</Universe>
+   <Address>54</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>34</ID>
+   <Name>Generic Dimmer [35]</Name>
+   <Universe>1</Universe>
+   <Address>15</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>35</ID>
+   <Name>Face Cameo 1 Instru</Name>
+   <Universe>1</Universe>
+   <Address>100</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>36</ID>
+   <Name>Face Cameo 2 Chorale</Name>
+   <Universe>1</Universe>
+   <Address>101</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>37</ID>
+   <Name>Face Cameo 3 Chorale</Name>
+   <Universe>1</Universe>
+   <Address>102</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>38</ID>
+   <Name>Face Cameo 4 Chorale</Name>
+   <Universe>1</Universe>
+   <Address>103</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>39</ID>
+   <Name>Face Cameo 5 Chorale</Name>
+   <Universe>1</Universe>
+   <Address>104</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>48</ID>
+   <Name>Top Instru 1</Name>
+   <Universe>1</Universe>
+   <Address>105</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>49</ID>
+   <Name>Top Chorale 1</Name>
+   <Universe>1</Universe>
+   <Address>106</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>50</ID>
+   <Name>Top Chorale 2</Name>
+   <Universe>1</Universe>
+   <Address>107</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>51</ID>
+   <Name>Top Chorale 3</Name>
+   <Universe>1</Universe>
+   <Address>108</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>52</ID>
+   <Name>Top Instru 2</Name>
+   <Universe>1</Universe>
+   <Address>112</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>53</ID>
+   <Name>Top Chorale 5</Name>
+   <Universe>1</Universe>
+   <Address>124</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>54</ID>
+   <Name>Top Instru 3 (piano)</Name>
+   <Universe>1</Universe>
+   <Address>116</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>55</ID>
+   <Name>Top Chorale 4</Name>
+   <Universe>1</Universe>
+   <Address>120</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <FixtureGroup ID="0">
+   <Name>Facade</Name>
+   <Size X="2" Y="1"/>
+  </FixtureGroup>
+  <FixtureGroup ID="1">
+   <Name>FACE - Skye</Name>
+   <Size X="2" Y="1"/>
+   <Head X="0" Y="0" Fixture="16">0</Head>
+  </FixtureGroup>
+  <FixtureGroup ID="2">
+   <Name>FACE - Instru</Name>
+   <Size X="4" Y="2"/>
+   <Head X="0" Y="0" Fixture="48">0</Head>
+   <Head X="2" Y="0" Fixture="52">0</Head>
+   <Head X="3" Y="0" Fixture="54">0</Head>
+   <Head X="1" Y="1" Fixture="35">0</Head>
+  </FixtureGroup>
+  <FixtureGroup ID="3">
+   <Name>FACE - Chorale</Name>
+   <Size X="6" Y="2"/>
+   <Head X="2" Y="0" Fixture="36">0</Head>
+   <Head X="3" Y="0" Fixture="37">0</Head>
+   <Head X="4" Y="0" Fixture="38">0</Head>
+   <Head X="5" Y="0" Fixture="39">0</Head>
+   <Head X="0" Y="1" Fixture="16">0</Head>
+   <Head X="1" Y="1" Fixture="19">0</Head>
+   <Head X="3" Y="1" Fixture="24">0</Head>
+   <Head X="4" Y="1" Fixture="7">0</Head>
+  </FixtureGroup>
+  <FixtureGroup ID="4">
+   <Name>FACE - Discours</Name>
+   <Size X="2" Y="1"/>
+   <Head X="0" Y="0" Fixture="21">0</Head>
+   <Head X="1" Y="0" Fixture="22">0</Head>
+  </FixtureGroup>
+  <FixtureGroup ID="5">
+   <Name>Retro - Spot</Name>
+   <Size X="1" Y="1"/>
+   <Head X="0" Y="0" Fixture="0">0</Head>
+  </FixtureGroup>
+  <FixtureGroup ID="6">
+   <Name>Retro - Barres</Name>
+   <Size X="10" Y="4"/>
+   <Head X="3" Y="0" Fixture="4">0</Head>
+   <Head X="4" Y="0" Fixture="9">0</Head>
+   <Head X="5" Y="0" Fixture="10">0</Head>
+   <Head X="6" Y="0" Fixture="11">0</Head>
+   <Head X="2" Y="1" Fixture="2">0</Head>
+   <Head X="7" Y="1" Fixture="12">0</Head>
+   <Head X="1" Y="2" Fixture="3">0</Head>
+   <Head X="8" Y="2" Fixture="15">0</Head>
+   <Head X="0" Y="3" Fixture="13">0</Head>
+   <Head X="9" Y="3" Fixture="14">0</Head>
+  </FixtureGroup>
+  <FixtureGroup ID="7">
+   <Name>Réglages</Name>
+   <Size X="10" Y="1"/>
+   <Head X="0" Y="0" Fixture="17">0</Head>
+   <Head X="1" Y="0" Fixture="23">0</Head>
+   <Head X="2" Y="0" Fixture="27">0</Head>
+   <Head X="3" Y="0" Fixture="28">0</Head>
+   <Head X="4" Y="0" Fixture="29">0</Head>
+   <Head X="5" Y="0" Fixture="30">0</Head>
+   <Head X="6" Y="0" Fixture="31">0</Head>
+   <Head X="7" Y="0" Fixture="32">0</Head>
+   <Head X="8" Y="0" Fixture="33">0</Head>
+   <Head X="9" Y="0" Fixture="34">0</Head>
+  </FixtureGroup>
+  <FixtureGroup ID="8">
+   <Name>TOP - Chorale</Name>
+   <Size X="5" Y="2"/>
+   <Head X="1" Y="0" Fixture="55">0</Head>
+   <Head X="3" Y="0" Fixture="53">0</Head>
+   <Head X="0" Y="1" Fixture="49">0</Head>
+   <Head X="2" Y="1" Fixture="50">0</Head>
+   <Head X="4" Y="1" Fixture="51">0</Head>
+  </FixtureGroup>
+  <Palette ID="0" Type="Color" Name="Couleur Bleu" Value="#0000ff000000"/>
+  <Palette ID="1" Type="Color" Name="Couleur Jaune" Value="#ffff33000000"/>
+  <Palette ID="2" Type="Color" Name="Couleur Orange" Value="#ffad33000000"/>
+  <Palette ID="3" Type="Dimmer" Name="Intensité (100%)" Value="255"/>
+  <Palette ID="4" Type="Color" Name="Couleur - Blanc" Value="#ffffff000000"/>
+  <Palette ID="5" Type="Color" Name="Couleur - Rouge" Value="#ff0000000000"/>
+  <Palette ID="6" Type="Color" Name="Couleur Vert" Value="#00ff00000000"/>
+  <Palette ID="7" Type="Color" Name="Couleur - Turquoise" Value="#73b1ac000000"/>
+  <Palette ID="8" Type="Color" Name="Couleur - Rose Clair" Value="#fab6b6000000"/>
+  <Palette ID="9" Type="Color" Name="Couleur - Bleu Clair" Value="#6c8ec3000000"/>
+  <Palette ID="10" Type="Color" Name="Couleur - Bleu Nuit" Value="#107691000000"/>
+  <Palette ID="11" Type="Color" Name="Couleur - Brun clair" Value="#9c5f56000000"/>
+  <Palette ID="12" Type="Color" Name="Couleur - Vert Clair" Value="#658470000000"/>
+  <Palette ID="13" Type="Color" Name="Couleur - Vert Foncé" Value="#265f4e000000"/>
+  <Palette ID="14" Type="Color" Name="Couleur - Orange Clair" Value="#eb9869000000"/>
+  <Palette ID="15" Type="Color" Name="Couleur - Brun foncé" Value="#6b3928000000"/>
+  <Palette ID="18" Type="Color" Name="Couleur - Jaune très clair" Value="#decdb0000000"/>
+  <Palette ID="19" Type="Color" Name="Couleur - Violet très clair" Value="#ff00ff000000"/>
+  <Function ID="0" Type="Scene" Name="Couleur - Blanc - A" Path="Couleurs">
+   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
+   <FixtureGroup ID="5"/>
+   <Palette ID="4"/>
+  </Function>
+  <Function ID="1" Type="Scene" Name="BACK - Spot - Intensité">
+   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
+   <FixtureGroup ID="5"/>
+   <Palette ID="3"/>
+  </Function>
+  <Function ID="2" Type="Scene" Name="FACE - Discours - Intensité">
+   <Speed FadeIn="1000" FadeOut="0" Duration="0"/>
+   <FixtureGroup ID="4"/>
+   <Palette ID="3"/>
+  </Function>
+  <Function ID="3" Type="Scene" Name="FACE - Instru - Intensité">
+   <Speed FadeIn="1000" FadeOut="0" Duration="0"/>
+   <FixtureGroup ID="2"/>
+   <Palette ID="3"/>
+  </Function>
+  <Function ID="4" Type="Scene" Name="Couleur - Jaune - A" Path="Couleurs">
+   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
+   <FixtureGroup ID="5"/>
+   <Palette ID="1"/>
+  </Function>
+  <Function ID="5" Type="Scene" Name="Couleur - Orange - A" Path="Couleurs">
+   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
+   <FixtureGroup ID="5"/>
+   <Palette ID="2"/>
+  </Function>
+  <Function ID="6" Type="Scene" Name="Couleur - Bleu - A" Path="Couleurs">
+   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
+   <FixtureGroup ID="5"/>
+   <Palette ID="0"/>
+  </Function>
+  <Function ID="7" Type="Scene" Name="FACE - Chorale Intensité">
+   <Speed FadeIn="1000" FadeOut="0" Duration="0"/>
+   <FixtureGroup ID="3"/>
+   <Palette ID="3"/>
+  </Function>
+  <Function ID="8" Type="Scene" Name="Couleur - Jaune - B" Path="Couleurs">
+   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
+   <FixtureGroup ID="6"/>
+   <Palette ID="1"/>
+  </Function>
+  <Function ID="9" Type="Scene" Name="Couleur - Orange - B" Path="Couleurs">
+   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
+   <FixtureGroup ID="6"/>
+   <Palette ID="2"/>
+  </Function>
+  <Function ID="10" Type="Scene" Name="Couleur - Bleu - B" Path="Couleurs">
+   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
+   <FixtureGroup ID="6"/>
+   <Palette ID="0"/>
+  </Function>
+  <Function ID="11" Type="Scene" Name="Couleur - Blanc - B" Path="Couleurs">
+   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
+   <FixtureGroup ID="6"/>
+   <Palette ID="4"/>
+  </Function>
+  <Function ID="12" Type="Scene" Name="BACK - Barres - Intensité">
+   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
+   <FixtureGroup ID="6"/>
+   <Palette ID="3"/>
+  </Function>
+  <Function ID="13" Type="RGBMatrix" Name="RGB - Retro - Sunset">
+   <Speed FadeIn="500" FadeOut="500" Duration="600"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Gradient</Algorithm>
+   <Color Index="0">4294901760</Color>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>6</FixtureGroup>
+   <Property Name="orientation" Value="Horizontal"/>
+   <Property Name="presetIndex" Value="Sunset"/>
+  </Function>
+  <Function ID="14" Type="Scene" Name="Couleur - Rouge - A" Path="Couleurs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureGroup ID="5"/>
+   <Palette ID="5"/>
+  </Function>
+  <Function ID="15" Type="Scene" Name="Couleur - Rouge - B" Path="Couleurs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureGroup ID="6"/>
+   <Palette ID="5"/>
+  </Function>
+  <Function ID="16" Type="Scene" Name="Couleur - Vert - B" Path="Couleurs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureGroup ID="6"/>
+   <Palette ID="6"/>
+  </Function>
+  <Function ID="17" Type="Scene" Name="Couleur - Vert - A" Path="Couleurs">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureGroup ID="5"/>
+   <Palette ID="6"/>
+  </Function>
+  <Function ID="18" Type="RGBMatrix" Name="RGB - Retro - Cold">
+   <Speed FadeIn="1000" FadeOut="1000" Duration="1500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Gradient</Algorithm>
+   <Color Index="0">4294901760</Color>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>6</FixtureGroup>
+   <Property Name="orientation" Value="Horizontal"/>
+   <Property Name="presetIndex" Value="Ocean"/>
+  </Function>
+  <Function ID="19" Type="RGBMatrix" Name="RGB - Retro - Abstract">
+   <Speed FadeIn="500" FadeOut="500" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Gradient</Algorithm>
+   <Color Index="0">4294901760</Color>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>6</FixtureGroup>
+   <Property Name="orientation" Value="Horizontal"/>
+   <Property Name="presetIndex" Value="Abstract"/>
+  </Function>
+  <Function ID="20" Type="Scene" Name="Couleur - Turquoise - A" Path="Couleurs">
+   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
+   <FixtureGroup ID="5"/>
+   <Palette ID="7"/>
+  </Function>
+  <Function ID="21" Type="Scene" Name="Couleur - Turquoise - B" Path="Couleurs">
+   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
+   <FixtureGroup ID="6"/>
+   <Palette ID="7"/>
+  </Function>
+  <Function ID="22" Type="Scene" Name="Couleur - Rose Clair - A" Path="Couleurs">
+   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
+   <FixtureGroup ID="5"/>
+   <Palette ID="8"/>
+  </Function>
+  <Function ID="23" Type="Scene" Name="Couleur - Rose Clair - B" Path="Couleurs">
+   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
+   <FixtureGroup ID="6"/>
+   <Palette ID="8"/>
+  </Function>
+  <Function ID="24" Type="Scene" Name="Couleur - Bleu Clair - A" Path="Couleurs">
+   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
+   <FixtureGroup ID="5"/>
+   <Palette ID="9"/>
+  </Function>
+  <Function ID="25" Type="Scene" Name="Couleur - Bleu Clair - B" Path="Couleurs">
+   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
+   <FixtureGroup ID="6"/>
+   <Palette ID="9"/>
+  </Function>
+  <Function ID="26" Type="Scene" Name="Couleur - Bleu Nuit - A" Path="Couleurs">
+   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
+   <FixtureGroup ID="5"/>
+   <Palette ID="10"/>
+  </Function>
+  <Function ID="27" Type="Scene" Name="Couleur - Bleu Nuit - B" Path="Couleurs">
+   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
+   <FixtureGroup ID="6"/>
+   <Palette ID="10"/>
+  </Function>
+  <Function ID="28" Type="Scene" Name="Couleur - Brun clair - A" Path="Couleurs">
+   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
+   <FixtureGroup ID="5"/>
+   <Palette ID="11"/>
+  </Function>
+  <Function ID="29" Type="Scene" Name="Couleur - Brun clair - B" Path="Couleurs">
+   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
+   <FixtureGroup ID="6"/>
+   <Palette ID="11"/>
+  </Function>
+  <Function ID="30" Type="Scene" Name="Couleur - Vert Clair - A" Path="Couleurs">
+   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
+   <FixtureGroup ID="5"/>
+   <Palette ID="12"/>
+  </Function>
+  <Function ID="31" Type="Scene" Name="Couleur - Vert Clair - B" Path="Couleurs">
+   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
+   <FixtureGroup ID="6"/>
+   <Palette ID="12"/>
+  </Function>
+  <Function ID="32" Type="Scene" Name="Couleur - Vert Foncé - A" Path="Couleurs">
+   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
+   <FixtureGroup ID="5"/>
+   <Palette ID="13"/>
+  </Function>
+  <Function ID="33" Type="Scene" Name="Couleur - Vert Foncé - B" Path="Couleurs">
+   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
+   <FixtureGroup ID="6"/>
+   <Palette ID="13"/>
+  </Function>
+  <Function ID="34" Type="Scene" Name="Couleur - Orange Clair - A" Path="Couleurs">
+   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
+   <FixtureGroup ID="5"/>
+   <Palette ID="14"/>
+  </Function>
+  <Function ID="35" Type="Scene" Name="Couleur - Orange Clair - B" Path="Couleurs">
+   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
+   <FixtureGroup ID="6"/>
+   <Palette ID="14"/>
+  </Function>
+  <Function ID="36" Type="Scene" Name="Couleur - Brun foncé - A" Path="Couleurs">
+   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
+   <FixtureGroup ID="5"/>
+   <Palette ID="15"/>
+  </Function>
+  <Function ID="37" Type="Scene" Name="Couleur - Brun foncé - B" Path="Couleurs">
+   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
+   <FixtureGroup ID="6"/>
+   <Palette ID="15"/>
+  </Function>
+  <Function ID="38" Type="Scene" Name="Couleur - Jaune très clair - A" Path="Couleurs">
+   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
+   <FixtureGroup ID="5"/>
+   <Palette ID="18"/>
+  </Function>
+  <Function ID="39" Type="Scene" Name="Couleur - Jaune très clair - B" Path="Couleurs">
+   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
+   <FixtureGroup ID="6"/>
+   <Palette ID="18"/>
+  </Function>
+  <Function ID="40" Type="Scene" Name="Couleur - Violet très clair - A" Path="Couleurs">
+   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
+   <FixtureGroup ID="5"/>
+   <Palette ID="19"/>
+  </Function>
+  <Function ID="41" Type="Scene" Name="Couleur - Violet très clair - B" Path="Couleurs">
+   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
+   <FixtureGroup ID="6"/>
+   <Palette ID="19"/>
+  </Function>
+  <Function ID="42" Type="Scene" Name="New Scene" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+  </Function>
+  <Function ID="43" Type="RGBMatrix" Name="RGB - Spot - Abstract">
+   <Speed FadeIn="500" FadeOut="500" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Gradient</Algorithm>
+   <Color Index="0">4294901760</Color>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>5</FixtureGroup>
+   <Property Name="orientation" Value="Horizontal"/>
+   <Property Name="presetIndex" Value="Abstract"/>
+   <Property Name="presetSize" Value="6"/>
+  </Function>
+  <Function ID="44" Type="RGBMatrix" Name="Test Pattern">
+   <Speed FadeIn="500" FadeOut="500" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Fill Unfill</Algorithm>
+   <Color Index="0">4284940134</Color>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>6</FixtureGroup>
+   <Property Name="orientation" Value="Horizontal"/>
+  </Function>
+  <Function ID="45" Type="Scene" Name="FACE - Skye - Intensité">
+   <Speed FadeIn="1000" FadeOut="0" Duration="0"/>
+   <FixtureGroup ID="1"/>
+   <Palette ID="3"/>
+  </Function>
+  <Function ID="46" Type="Scene" Name="TOP - Chorale - Intensité">
+   <Speed FadeIn="1000" FadeOut="0" Duration="0"/>
+   <FixtureGroup ID="8"/>
+   <Palette ID="3"/>
+  </Function>
+  <Monitor DisplayMode="0" ShowLabels="0">
+   <Font>Arial,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
+   <ChannelStyle>0</ChannelStyle>
+   <ValueStyle>0</ValueStyle>
+   <Grid Width="7" Height="4" Depth="5" Units="0" POV="1"/>
+   <StageItem>3</StageItem>
+   <FxItem ID="0" XPos="-492.718" YPos="56.4571" ZPos="2867.81" XRot="180"/>
+   <FxItem ID="0" Linked="1" Name="Spot RGB A (lié 1)" XPos="2465.35" YPos="56.4571" ZPos="650.124" XRot="180"/>
+   <FxItem ID="0" Linked="2" Name="Spot RGB A (lié 2)" XPos="7090.1" YPos="56.4571" ZPos="1592.13" XRot="180"/>
+   <FxItem ID="0" Linked="3" Name="Spot RGB A (lié 3)" XPos="-201" YPos="0" ZPos="4883.27" XRot="180"/>
+   <FxItem ID="0" Linked="4" Name="Spot RGB A (lié 4)" XPos="6801" YPos="0" ZPos="4815" XRot="180"/>
+   <FxItem ID="2" XPos="-450.063" YPos="56.4571" ZPos="974.981" XRot="300" YRot="-45"/>
+   <FxItem ID="3" XPos="-807.653" YPos="56.4571" ZPos="2190.84" XRot="60" YRot="90"/>
+   <FxItem ID="4" XPos="1469.35" YPos="46.0584" ZPos="640.212" XRot="300"/>
+   <FxItem ID="7" XPos="5784.38" YPos="2785.92" ZPos="6065.78"/>
+   <FxItem ID="9" XPos="2707.4" YPos="56.4571" ZPos="666.218" XRot="300"/>
+   <FxItem ID="10" XPos="3971.46" YPos="56.4571" ZPos="692.224" XRot="300"/>
+   <FxItem ID="11" XPos="5183.5" YPos="56.4571" ZPos="692.224" XRot="300"/>
+   <FxItem ID="12" XPos="6346.63" YPos="56.4571" ZPos="1018.21" XRot="300" YRot="45"/>
+   <FxItem ID="13" XPos="-778.351" YPos="40.1284" ZPos="3579.87" XRot="60" YRot="90"/>
+   <FxItem ID="14" XPos="6753.23" YPos="56.4571" ZPos="3450.37" XRot="300" YRot="90"/>
+   <FxItem ID="15" XPos="6740.82" YPos="56.4571" ZPos="2218.79" XRot="300" YRot="90"/>
+   <FxItem ID="16" XPos="737.808" YPos="2785.92" ZPos="6103.44"/>
+   <FxItem ID="17" XPos="4844.85" YPos="0" ZPos="1428.3"/>
+   <FxItem ID="19" XPos="2783.82" YPos="2785.92" ZPos="6087.09"/>
+   <FxItem ID="21" XPos="2196.54" YPos="2785.92" ZPos="5419.92"/>
+   <FxItem ID="22" XPos="3938.85" YPos="2785.92" ZPos="5431.92"/>
+   <FxItem ID="23" XPos="4029.81" YPos="0" ZPos="1453.38"/>
+   <FxItem ID="24" XPos="4685.12" YPos="2785.92" ZPos="6109.48"/>
+   <FxItem ID="27" XPos="3026.69" YPos="0" ZPos="1541.15"/>
+   <FxItem ID="28" XPos="2249.27" YPos="0" ZPos="1516.07"/>
+   <FxItem ID="29" XPos="1384.08" YPos="0" ZPos="1578.77"/>
+   <FxItem ID="30" XPos="1409.16" YPos="0" ZPos="2544.27"/>
+   <FxItem ID="31" XPos="2249.27" YPos="0" ZPos="2519.19"/>
+   <FxItem ID="32" XPos="3051.77" YPos="0" ZPos="2519.19"/>
+   <FxItem ID="33" XPos="3992.19" YPos="0" ZPos="2531.73"/>
+   <FxItem ID="34" XPos="4907.54" YPos="0" ZPos="2506.65"/>
+   <FxItem ID="35" XPos="110.575" YPos="0" ZPos="6524.8"/>
+   <FxItem ID="36" XPos="1749.01" YPos="0" ZPos="6420.3"/>
+   <FxItem ID="37" XPos="3780.33" YPos="0" ZPos="6420.3"/>
+   <FxItem ID="38" XPos="5299.57" YPos="0" ZPos="6522.27"/>
+   <FxItem ID="39" XPos="6288.13" YPos="0" ZPos="6495.54"/>
+   <FxItem ID="48" XPos="378.772" YPos="0" ZPos="4516.13"/>
+   <FxItem ID="49" XPos="2330.91" YPos="0" ZPos="4516.13"/>
+   <FxItem ID="50" XPos="4151.92" YPos="0" ZPos="4486.99"/>
+   <FxItem ID="51" XPos="5870.97" YPos="0" ZPos="4559.83"/>
+   <FxItem ID="52" XPos="772.112" YPos="0" ZPos="4151.93"/>
+   <FxItem ID="53" XPos="5404.79" YPos="0" ZPos="4224.77"/>
+   <FxItem ID="54" XPos="1908.43" YPos="0" ZPos="4151.92"/>
+   <FxItem ID="55" XPos="3773.15" YPos="0" ZPos="4079.08"/>
+  </Monitor>
+ </Engine>
+ <VirtualConsole>
+  <Frame Caption="Page 1" ID="0">
+   <Appearance>
+    <BackgroundColor>4280558628</BackgroundColor>
+    <Font>Roboto Condensed,16,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
+   </Appearance>
+   <WindowState Visible="True" X="0" Y="0" Width="1800" Height="784"/>
+   <AllowResize>False</AllowResize>
+   <ShowHeader>False</ShowHeader>
+   <ShowEnableButton>True</ShowEnableButton>
+   <Collapsed>False</Collapsed>
+   <Disabled>False</Disabled>
+   <Frame Caption="Retro" ID="49">
+    <WindowState Visible="True" X="15" Y="0" Width="884" Height="777"/>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>False</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <SoloFrame Caption="Couleur Barres" ID="26">
+     <WindowState Visible="True" X="0" Y="365" Width="490" Height="396"/>
+     <AllowResize>True</AllowResize>
+     <ShowHeader>True</ShowHeader>
+     <ShowEnableButton>True</ShowEnableButton>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <Button Caption="Couleur - Bleu" ID="24">
+      <WindowState Visible="True" X="8" Y="45" Width="64" Height="64"/>
+      <Appearance>
+       <BackgroundColor>4281545727</BackgroundColor>
+      </Appearance>
+      <Function ID="10"/>
+      <Action>Toggle</Action>
+     </Button>
+     <Button Caption="Couleur - Jaune très clair" ID="40">
+      <WindowState Visible="True" X="257" Y="202" Width="64" Height="64"/>
+      <Appearance>
+       <ForegroundColor>4278190080</ForegroundColor>
+       <BackgroundColor>4292799920</BackgroundColor>
+      </Appearance>
+      <Function ID="39"/>
+      <Action>Toggle</Action>
+     </Button>
+     <Button Caption="Couleur - Rouge" ID="28">
+      <WindowState Visible="True" X="343" Y="45" Width="64" Height="64"/>
+      <Appearance>
+       <BackgroundColor>4294901760</BackgroundColor>
+      </Appearance>
+      <Function ID="15"/>
+      <Action>Toggle</Action>
+     </Button>
+     <Button Caption="RGB - Retro - Abstract" ID="64">
+      <WindowState Visible="True" X="137" Y="289" Width="86" Height="86"/>
+      <Appearance>
+       <BackgroundColor>4282664004</BackgroundColor>
+      </Appearance>
+      <Function ID="19"/>
+      <Action>Toggle</Action>
+     </Button>
+     <Button Caption="Couleur - Orange Clair" ID="38">
+      <WindowState Visible="True" X="91" Y="202" Width="64" Height="64"/>
+      <Appearance>
+       <ForegroundColor>4278190080</ForegroundColor>
+       <BackgroundColor>4293628009</BackgroundColor>
+      </Appearance>
+      <Function ID="35"/>
+      <Action>Toggle</Action>
+     </Button>
+     <Button Caption="RGB - Retro - Sunset" ID="50">
+      <WindowState Visible="True" X="350" Y="289" Width="89" Height="89"/>
+      <Appearance>
+       <BackgroundColor>4282664004</BackgroundColor>
+      </Appearance>
+      <Function ID="13"/>
+      <Action>Toggle</Action>
+     </Button>
+     <Button Caption="Couleur - Turquoise" ID="31">
+      <WindowState Visible="True" X="8" Y="124" Width="64" Height="64"/>
+      <Appearance>
+       <BackgroundColor>4285777324</BackgroundColor>
+      </Appearance>
+      <Function ID="21"/>
+      <Action>Toggle</Action>
+     </Button>
+     <Button Caption="Couleur - Vert Clair" ID="36">
+      <WindowState Visible="True" X="425" Y="124" Width="64" Height="64"/>
+      <Appearance>
+       <BackgroundColor>4283788400</BackgroundColor>
+      </Appearance>
+      <Function ID="31"/>
+      <Action>Toggle</Action>
+     </Button>
+     <Button Caption="Couleur - Orange" ID="25">
+      <WindowState Visible="True" X="257" Y="45" Width="64" Height="64"/>
+      <Appearance>
+       <ForegroundColor>4278190080</ForegroundColor>
+       <BackgroundColor>4294946099</BackgroundColor>
+      </Appearance>
+      <Function ID="9"/>
+      <Action>Toggle</Action>
+     </Button>
+     <Button Caption="Couleur - Vert Foncé" ID="37">
+      <WindowState Visible="True" X="8" Y="202" Width="64" Height="64"/>
+      <Appearance>
+       <BackgroundColor>4279890766</BackgroundColor>
+      </Appearance>
+      <Function ID="33"/>
+      <Action>Toggle</Action>
+     </Button>
+     <Button Caption="Couleur - Brun foncé" ID="39">
+      <WindowState Visible="True" X="176" Y="202" Width="64" Height="64"/>
+      <Appearance>
+       <BackgroundColor>4284303144</BackgroundColor>
+      </Appearance>
+      <Function ID="37"/>
+      <Action>Toggle</Action>
+     </Button>
+     <Button Caption="Couleur - Vert" ID="30">
+      <WindowState Visible="True" X="425" Y="45" Width="64" Height="64"/>
+      <Appearance>
+       <ForegroundColor>4278190080</ForegroundColor>
+       <BackgroundColor>4278255360</BackgroundColor>
+      </Appearance>
+      <Function ID="16"/>
+      <Action>Toggle</Action>
+     </Button>
+     <Button Caption="Couleur - Bleu Nuit" ID="34">
+      <WindowState Visible="True" X="257" Y="124" Width="64" Height="64"/>
+      <Appearance>
+       <BackgroundColor>4279316113</BackgroundColor>
+      </Appearance>
+      <Function ID="27"/>
+      <Action>Toggle</Action>
+     </Button>
+     <Button Caption="Couleur - Bleu Clair" ID="33">
+      <WindowState Visible="True" X="176" Y="124" Width="64" Height="64"/>
+      <Appearance>
+       <BackgroundColor>4285306563</BackgroundColor>
+      </Appearance>
+      <Function ID="25"/>
+      <Action>Toggle</Action>
+     </Button>
+     <Button Caption="Couleur - Rose Clair" ID="32">
+      <WindowState Visible="True" X="91" Y="124" Width="64" Height="64"/>
+      <Appearance>
+       <ForegroundColor>4278190080</ForegroundColor>
+       <BackgroundColor>4294626998</BackgroundColor>
+      </Appearance>
+      <Function ID="23"/>
+      <Action>Toggle</Action>
+     </Button>
+     <Button Caption="Couleur - Violet très clair" ID="41">
+      <WindowState Visible="True" X="343" Y="202" Width="64" Height="64"/>
+      <Appearance>
+       <BackgroundColor>4286661227</BackgroundColor>
+      </Appearance>
+      <Function ID="41"/>
+      <Action>Toggle</Action>
+     </Button>
+     <Button Caption="RGB - Retro - Cold" ID="0">
+      <WindowState Visible="True" X="243" Y="289" Width="89" Height="89"/>
+      <Appearance>
+       <BackgroundColor>4282664004</BackgroundColor>
+      </Appearance>
+      <Function ID="18"/>
+      <Action>Toggle</Action>
+     </Button>
+     <Button Caption="Couleur - Jaune" ID="23">
+      <WindowState Visible="True" X="176" Y="45" Width="69" Height="69"/>
+      <Appearance>
+       <ForegroundColor>4278190080</ForegroundColor>
+       <BackgroundColor>4294967091</BackgroundColor>
+      </Appearance>
+      <Function ID="8"/>
+      <Action>Toggle</Action>
+     </Button>
+     <Button Caption="Couleur - Blanc" ID="22">
+      <WindowState Visible="True" X="91" Y="45" Width="64" Height="64"/>
+      <Appearance>
+       <ForegroundColor>4278190080</ForegroundColor>
+       <BackgroundColor>4294967295</BackgroundColor>
+      </Appearance>
+      <Function ID="11"/>
+      <Action>Toggle</Action>
+     </Button>
+     <Button Caption="Couleur - Brun clair" ID="35">
+      <WindowState Visible="True" X="343" Y="124" Width="64" Height="64"/>
+      <Appearance>
+       <BackgroundColor>4287926614</BackgroundColor>
+      </Appearance>
+      <Function ID="29"/>
+      <Action>Toggle</Action>
+     </Button>
+    </SoloFrame>
+    <Frame Caption="Couleur  Spot" ID="57">
+     <WindowState Visible="True" X="594" Y="30" Width="274" Height="320"/>
+     <AllowResize>True</AllowResize>
+     <ShowHeader>True</ShowHeader>
+     <ShowEnableButton>True</ShowEnableButton>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <Slider Caption="Red" ID="58" WidgetStyle="Slider" InvertedAppearance="false">
+      <WindowState Visible="True" X="13" Y="47" Width="80" Height="262"/>
+      <Appearance>
+       <BackgroundColor>4283826176</BackgroundColor>
+      </Appearance>
+      <Input ID="0" Universe="2" Channel="18"/>
+      <SliderMode ValueDisplayStyle="Exact" Monitor="true">Level</SliderMode>
+      <Reset>
+       <Input ID="1" Universe="2" Channel="136"/>
+      </Reset>
+      <Level LowLimit="0" HighLimit="255" Value="0">
+       <Channel Fixture="0">1</Channel>
+       <Channel Fixture="1">1</Channel>
+      </Level>
+     </Slider>
+     <Slider Caption="Blue" ID="60" WidgetStyle="Slider" InvertedAppearance="false">
+      <WindowState Visible="True" X="178" Y="47" Width="80" Height="262"/>
+      <Appearance>
+       <BackgroundColor>4278190234</BackgroundColor>
+      </Appearance>
+      <Input ID="0" Universe="2" Channel="22"/>
+      <SliderMode ValueDisplayStyle="Exact" Monitor="true">Level</SliderMode>
+      <Reset>
+       <Input ID="1" Universe="2" Channel="140"/>
+      </Reset>
+      <Level LowLimit="0" HighLimit="255" Value="0">
+       <Channel Fixture="0">3</Channel>
+       <Channel Fixture="1">3</Channel>
+      </Level>
+     </Slider>
+     <Slider Caption="Green" ID="59" WidgetStyle="Slider" InvertedAppearance="false">
+      <WindowState Visible="True" X="97" Y="47" Width="80" Height="262"/>
+      <Appearance>
+       <BackgroundColor>4278218240</BackgroundColor>
+      </Appearance>
+      <Input ID="0" Universe="2" Channel="20"/>
+      <SliderMode ValueDisplayStyle="Exact" Monitor="true">Level</SliderMode>
+      <Reset>
+       <Input ID="1" Universe="2" Channel="138"/>
+      </Reset>
+      <Level LowLimit="0" HighLimit="255" Value="0">
+       <Channel Fixture="0">2</Channel>
+       <Channel Fixture="1">2</Channel>
+      </Level>
+     </Slider>
+    </Frame>
+    <Frame Caption="Couleur Barres" ID="53">
+     <WindowState Visible="True" X="594" Y="365" Width="274" Height="320"/>
+     <AllowResize>True</AllowResize>
+     <ShowHeader>True</ShowHeader>
+     <ShowEnableButton>True</ShowEnableButton>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <Slider Caption="Blue" ID="56" WidgetStyle="Slider" InvertedAppearance="false">
+      <WindowState Visible="True" X="178" Y="47" Width="80" Height="262"/>
+      <Appearance>
+       <BackgroundColor>4278190234</BackgroundColor>
+      </Appearance>
+      <Input ID="0" Universe="2" Channel="23"/>
+      <SliderMode ValueDisplayStyle="Exact" Monitor="true">Level</SliderMode>
+      <Reset>
+       <Input ID="1" Universe="2" Channel="141"/>
+      </Reset>
+      <Level LowLimit="0" HighLimit="255" Value="0">
+       <Channel Fixture="2">2</Channel>
+       <Channel Fixture="3">2</Channel>
+       <Channel Fixture="4">2</Channel>
+       <Channel Fixture="9">2</Channel>
+       <Channel Fixture="10">2</Channel>
+       <Channel Fixture="11">2</Channel>
+       <Channel Fixture="12">2</Channel>
+       <Channel Fixture="13">2</Channel>
+       <Channel Fixture="14">2</Channel>
+       <Channel Fixture="15">2</Channel>
+      </Level>
+     </Slider>
+     <Slider Caption="Green" ID="55" WidgetStyle="Slider" InvertedAppearance="false">
+      <WindowState Visible="True" X="97" Y="47" Width="80" Height="262"/>
+      <Appearance>
+       <BackgroundColor>4278218240</BackgroundColor>
+      </Appearance>
+      <Input ID="0" Universe="2" Channel="21"/>
+      <SliderMode ValueDisplayStyle="Exact" Monitor="true">Level</SliderMode>
+      <Reset>
+       <Input ID="1" Universe="2" Channel="139"/>
+      </Reset>
+      <Level LowLimit="0" HighLimit="255" Value="0">
+       <Channel Fixture="2">1</Channel>
+       <Channel Fixture="3">1</Channel>
+       <Channel Fixture="4">1</Channel>
+       <Channel Fixture="9">1</Channel>
+       <Channel Fixture="10">1</Channel>
+       <Channel Fixture="11">1</Channel>
+       <Channel Fixture="12">1</Channel>
+       <Channel Fixture="13">1</Channel>
+       <Channel Fixture="14">1</Channel>
+       <Channel Fixture="15">1</Channel>
+      </Level>
+     </Slider>
+     <Slider Caption="Red" ID="54" WidgetStyle="Slider" InvertedAppearance="false">
+      <WindowState Visible="True" X="13" Y="47" Width="80" Height="262"/>
+      <Appearance>
+       <BackgroundColor>4283826176</BackgroundColor>
+      </Appearance>
+      <Input ID="0" Universe="2" Channel="19"/>
+      <SliderMode ValueDisplayStyle="Exact" Monitor="true">Level</SliderMode>
+      <Reset>
+       <Input ID="1" Universe="2" Channel="137"/>
+      </Reset>
+      <Level LowLimit="0" HighLimit="255" Value="0">
+       <Channel Fixture="2">0</Channel>
+       <Channel Fixture="3">0</Channel>
+       <Channel Fixture="4">0</Channel>
+       <Channel Fixture="9">0</Channel>
+       <Channel Fixture="10">0</Channel>
+       <Channel Fixture="11">0</Channel>
+       <Channel Fixture="12">0</Channel>
+       <Channel Fixture="13">0</Channel>
+       <Channel Fixture="14">0</Channel>
+       <Channel Fixture="15">0</Channel>
+      </Level>
+     </Slider>
+    </Frame>
+    <SoloFrame Caption="Couleur Spot" ID="48">
+     <WindowState Visible="True" X="0" Y="30" Width="487" Height="335"/>
+     <AllowResize>True</AllowResize>
+     <ShowHeader>True</ShowHeader>
+     <ShowEnableButton>True</ShowEnableButton>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <Button Caption="Couleur - Bleu Clair" ID="14">
+      <WindowState Visible="True" X="176" Y="124" Width="64" Height="64"/>
+      <Appearance>
+       <BackgroundColor>4285306563</BackgroundColor>
+      </Appearance>
+      <Function ID="24"/>
+      <Action>Toggle</Action>
+     </Button>
+     <Button Caption="Couleur - Orange Clair" ID="44">
+      <WindowState Visible="True" X="91" Y="202" Width="64" Height="64"/>
+      <Appearance>
+       <ForegroundColor>4278190080</ForegroundColor>
+       <BackgroundColor>4293628009</BackgroundColor>
+      </Appearance>
+      <Function ID="34"/>
+      <Action>Toggle</Action>
+     </Button>
+     <Button Caption="Couleur - Rose Clair" ID="13">
+      <WindowState Visible="True" X="91" Y="124" Width="64" Height="64"/>
+      <Appearance>
+       <ForegroundColor>4278190080</ForegroundColor>
+       <BackgroundColor>4294626998</BackgroundColor>
+      </Appearance>
+      <Function ID="22"/>
+      <Action>Toggle</Action>
+     </Button>
+     <Button Caption="Couleur - Vert Foncé" ID="43">
+      <WindowState Visible="True" X="8" Y="202" Width="64" Height="64"/>
+      <Appearance>
+       <BackgroundColor>4279890766</BackgroundColor>
+      </Appearance>
+      <Function ID="32"/>
+      <Action>Toggle</Action>
+     </Button>
+     <Button Caption="Couleur - Orange" ID="18">
+      <WindowState Visible="True" X="257" Y="45" Width="64" Height="64"/>
+      <Appearance>
+       <ForegroundColor>4278190080</ForegroundColor>
+       <BackgroundColor>4294946099</BackgroundColor>
+      </Appearance>
+      <Function ID="5"/>
+      <Action>Toggle</Action>
+     </Button>
+     <Button Caption="Couleur - Jaune très clair" ID="46">
+      <WindowState Visible="True" X="257" Y="202" Width="64" Height="64"/>
+      <Appearance>
+       <ForegroundColor>4278190080</ForegroundColor>
+       <BackgroundColor>4292799920</BackgroundColor>
+      </Appearance>
+      <Function ID="38"/>
+      <Action>Toggle</Action>
+     </Button>
+     <Button Caption="Couleur - Bleu" ID="16">
+      <WindowState Visible="True" X="8" Y="45" Width="64" Height="64"/>
+      <Appearance>
+       <BackgroundColor>4281545727</BackgroundColor>
+      </Appearance>
+      <Function ID="6"/>
+      <Action>Toggle</Action>
+     </Button>
+     <Button Caption="Couleur - Violet très clair" ID="47">
+      <WindowState Visible="True" X="343" Y="202" Width="64" Height="64"/>
+      <Appearance>
+       <BackgroundColor>4286661227</BackgroundColor>
+      </Appearance>
+      <Function ID="40"/>
+      <Action>Toggle</Action>
+     </Button>
+     <Button Caption="Couleur - Rouge" ID="7">
+      <WindowState Visible="True" X="343" Y="45" Width="64" Height="64"/>
+      <Appearance>
+       <BackgroundColor>4294901760</BackgroundColor>
+      </Appearance>
+      <Function ID="14"/>
+      <Action>Toggle</Action>
+      <Input ID="0" Universe="0" Channel="145"/>
+     </Button>
+     <Button Caption="RGB - Spot - Abstract" ID="61">
+      <WindowState Visible="True" X="426" Y="198" Width="60" Height="76"/>
+      <Appearance>
+       <BackgroundColor>4282664004</BackgroundColor>
+      </Appearance>
+      <Function ID="43"/>
+      <Action>Toggle</Action>
+     </Button>
+     <Button Caption="Couleur - Brun foncé" ID="45">
+      <WindowState Visible="True" X="176" Y="202" Width="64" Height="64"/>
+      <Appearance>
+       <BackgroundColor>4284303144</BackgroundColor>
+      </Appearance>
+      <Function ID="36"/>
+      <Action>Toggle</Action>
+     </Button>
+     <Button Caption="Couleur - Vert Clair" ID="42">
+      <WindowState Visible="True" X="425" Y="124" Width="64" Height="64"/>
+      <Appearance>
+       <BackgroundColor>4283788400</BackgroundColor>
+      </Appearance>
+      <Function ID="30"/>
+      <Action>Toggle</Action>
+     </Button>
+     <Button Caption="Couleur - Turquoise" ID="11">
+      <WindowState Visible="True" X="8" Y="124" Width="64" Height="64"/>
+      <Appearance>
+       <BackgroundColor>4285777324</BackgroundColor>
+      </Appearance>
+      <Function ID="20"/>
+      <Action>Toggle</Action>
+     </Button>
+     <Button Caption="Couleur - Blanc" ID="20">
+      <WindowState Visible="True" X="91" Y="45" Width="64" Height="64"/>
+      <Appearance>
+       <ForegroundColor>4278190080</ForegroundColor>
+       <BackgroundColor>4294967295</BackgroundColor>
+      </Appearance>
+      <Function ID="0"/>
+      <Action>Toggle</Action>
+     </Button>
+     <Button Caption="Couleur - Jaune" ID="17">
+      <WindowState Visible="True" X="176" Y="45" Width="69" Height="69"/>
+      <Appearance>
+       <ForegroundColor>4278190080</ForegroundColor>
+       <BackgroundColor>4294967091</BackgroundColor>
+      </Appearance>
+      <Function ID="4"/>
+      <Action>Toggle</Action>
+     </Button>
+     <Button Caption="Couleur - Brun clair" ID="19">
+      <WindowState Visible="True" X="343" Y="124" Width="64" Height="64"/>
+      <Appearance>
+       <BackgroundColor>4287926614</BackgroundColor>
+      </Appearance>
+      <Function ID="28"/>
+      <Action>Toggle</Action>
+     </Button>
+     <Button Caption="Couleur - Bleu Nuit" ID="15">
+      <WindowState Visible="True" X="257" Y="124" Width="64" Height="64"/>
+      <Appearance>
+       <BackgroundColor>4279316113</BackgroundColor>
+      </Appearance>
+      <Function ID="26"/>
+      <Action>Toggle</Action>
+     </Button>
+     <Button Caption="Couleur - Vert" ID="29">
+      <WindowState Visible="True" X="425" Y="45" Width="64" Height="64"/>
+      <Appearance>
+       <ForegroundColor>4278190080</ForegroundColor>
+       <BackgroundColor>4278255360</BackgroundColor>
+      </Appearance>
+      <Function ID="17"/>
+      <Action>Toggle</Action>
+      <Input ID="0" Universe="0" Channel="144"/>
+     </Button>
+    </SoloFrame>
+    <Slider Caption="Intensité Spot" ID="12" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="491" Y="34" Width="97" Height="311"/>
+     <Appearance>
+      <ForegroundColor>4278190080</ForegroundColor>
+      <BackgroundColor>4288282521</BackgroundColor>
+     </Appearance>
+     <Input ID="0" Universe="2" Channel="1"/>
+     <SliderMode ValueDisplayStyle="Percentage">Adjust</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0"/>
+     <Adjust Attribute="0" Function="1"/>
+     <Flash>
+      <Input ID="2" Universe="2" Channel="168"/>
+     </Flash>
+    </Slider>
+    <Slider Caption="Intensité Barre" ID="1" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="495" Y="360" Width="97" Height="327"/>
+     <Appearance>
+      <ForegroundColor>4278190080</ForegroundColor>
+      <BackgroundColor>4288282623</BackgroundColor>
+     </Appearance>
+     <Input ID="0" Universe="2" Channel="2"/>
+     <SliderMode ValueDisplayStyle="Percentage">Adjust</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0"/>
+     <Adjust Attribute="0" Function="12"/>
+     <Flash>
+      <Input ID="2" Universe="2" Channel="169"/>
+     </Flash>
+    </Slider>
+   </Frame>
+   <Frame Caption="Facades" ID="2">
+    <WindowState Visible="True" X="914" Y="167" Width="564" Height="518"/>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>False</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Slider Caption="Chorale" ID="3" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="411" Y="30" Width="94" Height="316"/>
+     <Appearance>
+      <ForegroundColor>4278190080</ForegroundColor>
+      <BackgroundColor>4294967091</BackgroundColor>
+     </Appearance>
+     <Input ID="0" Universe="2" Channel="9"/>
+     <SliderMode ValueDisplayStyle="Exact">Adjust</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0"/>
+     <Adjust Attribute="0" Function="7"/>
+     <Flash>
+      <Input ID="2" Universe="2" Channel="176"/>
+     </Flash>
+    </Slider>
+    <Slider Caption="Instru" ID="21" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="320" Y="30" Width="94" Height="316"/>
+     <Appearance>
+      <BackgroundColor>4288322048</BackgroundColor>
+     </Appearance>
+     <Input ID="0" Universe="2" Channel="8"/>
+     <SliderMode ValueDisplayStyle="Exact">Adjust</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0"/>
+     <Adjust Attribute="0" Function="3"/>
+     <Flash>
+      <Input ID="2" Universe="2" Channel="175"/>
+     </Flash>
+    </Slider>
+    <Slider Caption="TOP Chorale" ID="9" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="45" Y="30" Width="91" Height="320"/>
+     <Appearance>
+      <BackgroundColor>4282664004</BackgroundColor>
+     </Appearance>
+     <Input ID="0" Universe="2" Channel="5"/>
+     <SliderMode ValueDisplayStyle="Exact">Adjust</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0"/>
+     <Adjust Attribute="0" Function="46"/>
+    </Slider>
+    <Slider Caption="Skye" ID="8" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="137" Y="30" Width="91" Height="320"/>
+     <Appearance>
+      <ForegroundColor>4278190080</ForegroundColor>
+      <BackgroundColor>4288282521</BackgroundColor>
+     </Appearance>
+     <Input ID="0" Universe="2" Channel="6"/>
+     <SliderMode ValueDisplayStyle="Exact">Adjust</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0"/>
+     <Adjust Attribute="0" Function="45"/>
+    </Slider>
+    <Slider Caption="Discours" ID="6" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="228" Y="30" Width="91" Height="320"/>
+     <Appearance>
+      <ForegroundColor>4278190080</ForegroundColor>
+      <BackgroundColor>4294956697</BackgroundColor>
+     </Appearance>
+     <Input ID="0" Universe="2" Channel="7"/>
+     <SliderMode ValueDisplayStyle="Exact">Adjust</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0"/>
+     <Adjust Attribute="0" Function="2"/>
+     <Flash>
+      <Input ID="2" Universe="2" Channel="174"/>
+     </Flash>
+    </Slider>
+   </Frame>
+   <Clock Enable="False" Type="Clock" Caption="Horloge 52" ID="51">
+    <WindowState Visible="True" X="914" Y="60" Width="203" Height="50"/>
+    <Appearance>
+     <Font>Roboto Condensed,25,-1,5,700,0,0,0,0,0,0,0,0,0,0,1</Font>
+    </Appearance>
+   </Clock>
+   <Button Caption="Stop" ID="4">
+    <WindowState Visible="True" X="914" Y="106" Width="235" Height="58"/>
+    <Appearance>
+     <BackgroundColor>4288282624</BackgroundColor>
+    </Appearance>
+    <Function ID="4294967295"/>
+    <Action>StopAll</Action>
+    <Input ID="0" Universe="2" Channel="181"/>
+   </Button>
+   <Button Caption="Blackout" ID="5">
+    <WindowState Visible="True" X="914" Y="0" Width="235" Height="58"/>
+    <Appearance>
+     <BackgroundColor>4278190080</BackgroundColor>
+    </Appearance>
+    <Function ID="4294967295"/>
+    <Action>Blackout</Action>
+    <Input ID="0" Universe="2" Channel="182"/>
+   </Button>
+   <Slider Caption="MASTER" ID="52" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="True" X="1158" Y="0" Width="174" Height="158"/>
+    <Appearance>
+     <BackgroundColor>4278190080</BackgroundColor>
+    </Appearance>
+    <SliderMode ValueDisplayStyle="Percentage">GrandMaster</SliderMode>
+    <Level LowLimit="0" HighLimit="255" Value="255"/>
+   </Slider>
+  </Frame>
+  <Frame Caption="Page 2" ID="1">
+   <Appearance>
+    <Font>Roboto Condensed,16,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
+   </Appearance>
+   <WindowState Visible="True" X="0" Y="0" Width="1920" Height="1080"/>
+   <AllowResize>False</AllowResize>
+   <ShowHeader>False</ShowHeader>
+   <ShowEnableButton>True</ShowEnableButton>
+   <Collapsed>False</Collapsed>
+   <Disabled>False</Disabled>
+   <Slider Caption="Fader 78" ID="77" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="True" X="76" Y="182" Width="121" Height="487"/>
+    <Appearance>
+     <BackgroundColor>4282664004</BackgroundColor>
+    </Appearance>
+    <SliderMode ValueDisplayStyle="Exact">Level</SliderMode>
+    <Level LowLimit="0" HighLimit="255" Value="255">
+     <Channel Fixture="17">0</Channel>
+     <Channel Fixture="23">0</Channel>
+     <Channel Fixture="27">0</Channel>
+     <Channel Fixture="28">0</Channel>
+     <Channel Fixture="29">0</Channel>
+     <Channel Fixture="30">0</Channel>
+     <Channel Fixture="31">0</Channel>
+     <Channel Fixture="32">0</Channel>
+     <Channel Fixture="33">0</Channel>
+     <Channel Fixture="34">0</Channel>
+    </Level>
+   </Slider>
+  </Frame>
+ </VirtualConsole>
+</Workspace>
