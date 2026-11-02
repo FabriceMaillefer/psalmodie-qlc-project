@@ -1,112 +1,200 @@
 # Psalmo Light — éclairage QLC+
 
-Configuration d'éclairage pour les célébrations (psalmodie). **Version finale
-utilisée au premier trimestre 2026.**
+Configuration courante : **`Concert Light 2026_1.qxw`**, pour la série de concerts.
 
-Fichier projet : `Psalmo Light 2026_14.qxw`
+La configuration des célébrations, dans sa version finale du 1ᵉʳ trimestre 2026,
+reste conservée dans l'historique git au tag `2026-Q1` :
+
+```bash
+git show 2026-Q1:"Psalmo Light 2026_14.qxw" > "Psalmo Light 2026_14.qxw"
+git checkout 2026-Q1          # ou revenir entièrement à cet état
+```
 
 ---
 
 ## Démarrage
 
-1. Régler le réseau de l'ordinateur sur le sous-réseau `192.168.1.x`
+1. **Adresser les projecteurs** selon le tableau plus bas (à faire une seule fois).
+2. **Brancher la X-Touch Compact en USB**, puis l'allumer.
+3. **Régler le réseau** de l'ordinateur sur le sous-réseau `192.168.1.x`
    (le nœud ArtNet est en `192.168.1.104`).
-2. Brancher l'interface **DMX USB PRO** si la salle fournit son propre système
-   d'éclairage (voir *Univers* ci-dessous).
-3. Brancher la X-Touch Compact **avant** de lancer QLC+.
-4. Lancer QLC+ et ouvrir `Psalmo Light 2026_14.qxw`.
-5. Monter le fader `MASTER`.
+4. **Lancer QLC+ 5.3**, puis ouvrir `Concert Light 2026_1.qxw`.
+   La console virtuelle s'affiche directement.
+5. **Monter le fader MASTER** à fond — sans lui, rien ne sort.
 
-Rien à installer côté définitions de projecteurs : Chauvet, Showtec et les dimmers
-génériques sont tous fournis avec QLC+.
+Rien à installer côté définitions de projecteurs : elles sont fournies avec QLC+ 5.3.
 
 L'interface web démarre automatiquement : la console est aussi pilotable depuis un
-téléphone ou une tablette sur le même réseau.
+téléphone ou une tablette sur le même réseau. Les faders motorisés et les LED de la
+X-Touch suivent l'état de la console (retour MIDI actif).
 
 ---
 
-## Univers
+## Jouer la console
 
-| ID | Nom | Rôle | Contenu |
-|---|---|---|---|
-| 0 | `Psalmo` | ArtNet → `192.168.1.104` ligne 8 (sortie IP `192.168.1.20`, univers 1) | les 10 barres + le spot — **44 canaux** |
-| 1 | `USB (Salle)` | DMX USB PRO (S/N EN507410), 125 canaux | les 29 dimmers de la salle — **29 canaux** |
-| 2 | `MIDI Input` | X-Touch Compact, **avec retour** (`Feedback`) | — |
+### Lumière de face (les 8 fresnels blancs)
 
-Le retour MIDI est actif : les faders motorisés et les LED de la X-Touch suivent
-l'état de la console.
+Trois faders dans le cadre **Facades**, un par zone. Ce sont des blancs fixes, il n'y
+a pas de réglage de couleur ni de température.
+
+| Fader écran | Fader X-Touch | Pilote |
+|---|---|---|
+| `Chorale` | 9 | les 4 fresnels de la chorale |
+| `Instru` | 8 | les 2 fresnels de l'instrument |
+| `Discours` | 7 | les 2 fresnels du discours |
+
+⚠️ **L'ordre à l'écran n'est pas l'ordre sur la X-Touch.** À l'écran, de gauche à
+droite : Chorale, Instru, Discours. Sur la surface : Discours, Instru, Chorale.
+
+### Rétro-éclairage couleur (le fond de scène)
+
+Deux bus indépendants, chacun avec son cadre de boutons et son fader d'intensité :
+
+- **Spots** — les 8 Spectral. Cadre `Couleur Spot`, intensité sur le fader
+  `Intensité Spot` (X-Touch n° 1).
+- **Barres** — les 6 ColorBand. Cadre `Couleur Barres`, intensité sur le fader
+  `Intensité Barre` (X-Touch n° 2).
+
+17 couleurs par bus, fondu d'une seconde dans les deux sens. **Une seule couleur à la
+fois par bus** : cliquer une couleur désactive la précédente.
+
+### Les effets animés
+
+Dans les mêmes cadres que les couleurs, mélangés aux boutons :
+
+| Bouton | Sur | Effet |
+|---|---|---|
+| `RGB - Retro - Sunset` | les 6 barres | dégradé chaud qui se déplace |
+| `RGB - Retro - Cold` | les 6 barres | dégradé froid qui se déplace |
+| `RGB - Retro - Abstract` | les 6 barres | dégradé abstrait |
+| `RGB - Spot - Abstract` | les 8 spots | dégradé abstrait |
+| `Test Pattern` | les 6 barres | remplissage progressif — **vérification du patch** |
+
+Les effets sont dans le même cadre que les couleurs fixes, donc **un effet et une
+couleur statique s'excluent** : cliquer un effet coupe la couleur, et inversement.
+
+`Test Pattern` sert au montage : il allume les barres une par une, ce qui permet de
+vérifier d'un coup d'œil que les 6 adresses sont correctes et dans le bon ordre.
+
+### Retouche de couleur à la main
+
+Les cadres `Melange Spot` et `Melange Barres` donnent des faders Rouge / Vert / Bleu
+par bus, avec un bouton de remise à zéro.
+
+⚠️ Ces faders **ajoutent** de la couleur par-dessus la couleur active — ils ne
+peuvent pas l'assombrir ni la retirer. Pour repartir propre : remettre les faders à
+zéro, ou désactiver le bouton de couleur.
+
+### Arrêts d'urgence
+
+| Bouton | X-Touch | Effet |
+|---|---|---|
+| `Blackout` | 182 | coupe toute la sortie DMX, instantanément |
+| `Stop` | 181 | arrête toutes les scènes et tous les effets en cours |
+| `MASTER` | — | limiteur général de niveau |
 
 ---
 
-## Adressage DMX
+## En cas de problème
 
-### Univers 0 — barres et spot (ArtNet)
-
-| Projecteur | DMX |
+| Symptôme | À vérifier |
 |---|---|
-| Bar Jardin 01 / 02 / 03 | 50–53, 55–58, 60–63 |
-| Bar Fond 01 / 02 / 03 / 04 | 65–68, 70–73, 75–78, 80–83 |
-| Bar Cour 01 / 02 / 03 | 95–98, 90–93, 85–88 |
-| Spot RGB A | 100–103 |
-
-Les 10 barres sont des **Chauvet ColorBand Pix IP** en mode 4 canaux
-(`Red`, `Green`, `Blue`, `Dimmer`). Le spot est un **Showtec Spectral M800 IPX** en
-AR1.D (`Dimmer`, `Red`, `Green`, `Blue`).
-
-⚠️ **L'ordre des canaux diffère entre les barres et le spot** : c'est le piège à
-retenir pour toute modification manuelle.
-
-### Univers 1 — dimmers de la salle (DMX USB)
-
-29 dimmers génériques à 1 canal : `Face Salle` (Solo, Chorale, Instrument) en 1–6 et
-12–16, les réglages en 55–59, `Face Cameo` en 101–105, `Top` en 106–109, 113, 117,
-121, 125.
+| Rien ne s'allume | Le fader `MASTER` est-il en haut ? Le `Blackout` est-il enclenché ? |
+| Rien ne s'allume, MASTER en haut | Réseau sur `192.168.1.x` ? Câble du nœud ArtNet ? |
+| La X-Touch ne répond pas | Elle doit être branchée **avant** le lancement de QLC+. Relancer QLC+. |
+| Un projecteur reste noir ou prend la mauvaise couleur | Son adresse DMX, à comparer au tableau ci-dessous. Lancer `Test Pattern` pour les barres. |
+| Les effets animés ne bougent pas | Les barres doivent avoir des adresses **différentes** (voir la note sur les adresses partagées) |
+| Une couleur ne part pas | Désactiver le bouton de couleur, et remettre à zéro les faders de mélange |
 
 ---
 
-## Structure
+## Technique
 
-**Zones** — `FACE - Chorale` (8), `FACE - Instru` (4), `FACE - Discours` (2),
-`FACE - Skye` (1), `TOP - Chorale` (5), `Retro - Spot` (1), `Retro - Barres` (10),
-`Réglages` (10 dimmers de réserve).
+### Univers
 
-**18 palettes** : 17 couleurs + 1 intensité à 100 %.
+| ID | Nom | Rôle |
+|---|---|---|
+| 0 | `Psalmo` | sortie DMX principale — ArtNet vers `192.168.1.104` ligne 8 (IP de sortie `192.168.1.20`, univers 1) |
+| 1 | `USB (Salle)` | DMX USB PRO (S/N EN507410) — raccordement au système de la salle d'accueil, non utilisé par ce patch |
+| 2 | `MIDI Input` | X-Touch Compact, avec retour (`Feedback`) |
 
-**47 fonctions** — 42 scènes (34 couleurs sur 2 bus, 8 intensités) et
-**5 RGBMatrix** : `RGB - Retro - Sunset`, `Cold`, `Abstract` et `Test Pattern` sur
-les barres, `RGB - Spot - Abstract` sur le spot. Les boutons d'effet sont placés dans
-les mêmes SoloFrames que les couleurs fixes, donc un effet et une couleur statique
-s'excluent mutuellement.
+### Adressage DMX (univers 0)
 
----
+| Projecteur | Modèle | Mode | Adresse |
+|---|---|---|---|
+| Face Chorale — **les 4 ensemble** | Axente FresnelLED WW | 1 canal | **1** |
+| Face Discours — **les 2 ensemble** | Axente FresnelLED WW | 1 canal | **2** |
+| Face Instru — **les 2 ensemble** | Axente FresnelLED WW | 1 canal | **3** |
+| Bar Fond 01 → 06 | Chauvet ColorBand Pix IP | 4 Channel | **10, 15, 20, 25, 30, 35** |
+| Retro Spot 1 → 8 | Showtec Spectral M800 IPX | AR1.D | **40, 45, 50, 55, 60, 65, 70, 75** |
 
-## Console virtuelle
+22 projecteurs, 59 canaux sur 512.
 
-- **Page 1** — cadre `Retro` (les deux SoloFrames de couleurs et d'effets, les faders
-  de mélange R/G/B, `Intensité Spot`, `Intensité Barre`), cadre `Facades`
-  (`Chorale`, `Instru`, `Discours`, `TOP Chorale`, `Skye`), une horloge,
-  `Blackout`, `Stop`, `MASTER`.
-- **Page 2** — un fader de niveau sur les 10 dimmers de réserve.
+**Toutes les adresses du fond vont de 5 en 5**, en une seule séquence continue : les
+6 barres de 10 à 35, puis les 8 spots de 40 à 75. Chaque appareil occupe 4 canaux, il
+reste donc un canal libre après chacun. Rien à calculer sur place : on avance de 5 en
+5 dans l'ordre du plan.
 
-## Mapping MIDI (univers 2)
+**Les projecteurs de face partagent leur adresse par zone** : les 4 fresnels de la
+chorale sont tous sur l'adresse 1, les 2 du discours sur la 2, les 2 de l'instrument
+sur la 3. Trois adresses à régler au lieu de huit, et comme une zone est toujours
+pilotée d'un seul fader, on ne perd aucun contrôle.
+
+**Les barres et les spots gardent des adresses individuelles**, parce que les effets
+animés font glisser un dégradé *à travers* les appareils. Les mettre sur la même
+adresse ferait que tous afficheraient la même couleur au même instant, ce qui
+supprimerait l'animation.
+
+### Implantation des canaux
+
+| Appareil | 0 | 1 | 2 | 3 |
+|---|---|---|---|---|
+| Axente FresnelLED WW | Dimmer | — | — | — |
+| Chauvet ColorBand Pix IP | **Red** | **Green** | **Blue** | Dimmer |
+| Showtec Spectral M800 IPX | Dimmer | **Red** | **Green** | **Blue** |
+
+⚠️ L'ordre diffère entre les barres et les spots : le ColorBand est `R G B Dimmer`,
+le Spectral `Dimmer R G B`. C'est le piège à retenir pour toute modification manuelle.
+
+Les Axente sont patchés en **dimmer générique** QLC+ (`Generic / Generic`, 1 canal) :
+aucun fichier de définition à installer, l'engine la construit à la volée.
+
+### Structure du projet
+
+- **5 groupes** — `FACE - Chorale`, `FACE - Instru`, `FACE - Discours` (une entrée
+  par zone, les projecteurs partageant l'adresse), `Retro - Spot` (8 appareils,
+  géométrie 8 × 1), `Retro - Barres` (6 appareils, géométrie 6 × 1).
+- **18 palettes** — 17 couleurs + 1 intensité à 100 %.
+- **44 fonctions** — 39 scènes (34 couleurs sur 2 bus, 5 intensités) et
+  **5 RGBMatrix**.
+
+La géométrie des groupes (8 × 1 et 6 × 1) est ce qui donne leur sens aux effets : le
+dégradé se déplace d'une case à l'autre dans cet ordre.
+
+### Mapping MIDI complet (univers 2)
 
 | Canal | Contrôle |
 |---|---|
 | 1 / 2 | Intensité Spot / Intensité Barre |
-| 5 / 6 | TOP Chorale / Skye |
 | 7 / 8 / 9 | Face Discours / Instru / Chorale |
 | 18 / 20 / 22 | Spots : Red / Green / Blue |
 | 19 / 21 / 23 | Barres : Red / Green / Blue |
-| 136–141 | Remise à zéro des faders de mélange |
+| 136–141 | Remise à zéro des faders de mélange (`136 + n` pour le fader `18 + n`) |
+| 144 / 145 | Boutons Vert / Rouge du bus spots |
 | 168, 169, 174, 175, 176 | boutons d'effets et de couleurs |
 | 181 / 182 | Stop / Blackout |
 
----
+Canaux libres : **5, 6** (ex-TOP Chorale et Skye), **15, 16, 17, 24, 25**, et les
+resets **142, 143**.
 
-## Contrôle de cohérence
+À vérifier au premier branchement : les notes 144 et 145 étaient assignées sur le
+mauvais univers dans toutes les versions précédentes et n'ont donc jamais pu être
+testées. Passez par l'assistant de profil d'entrée si elles ne répondent pas.
+
+### Contrôle de cohérence
 
 ```bash
-python3 tools/check_qxw.py "Psalmo Light 2026_14.qxw"
+python3 tools/check_qxw.py "Concert Light 2026_1.qxw"
 ```
 
 Croise le `.qxw` avec les définitions de projecteurs installées et signale :
@@ -115,17 +203,34 @@ canaux hors plage, canaux pilotés par plusieurs faders à la fois, appareils pr
 dans plusieurs groupes, groupes vides, palettes orphelines, entrées MIDI assignées
 par erreur sur un univers de sortie. Code de sortie non nul s'il trouve un problème.
 
-Il relève **6 points** sur cette version, laissés en l'état puisque c'est la
-configuration réellement utilisée :
+Il ne relève **aucun problème** sur cette configuration, contre 6 sur la version
+finale des célébrations (tag `2026-Q1`) et 51 sur la toute première.
 
-| | Constat |
-|---|---|
-| 1 | `Face Salle Instrument 1` appartient à la fois à `FACE - Skye` et `FACE - Chorale` : les deux scènes d'intensité se disputent son canal (HTP, le plus haut gagne). |
-| 2 | Les faders de mélange `Red` / `Green` / `Blue` des spots référencent encore la fixture ID 1, supprimée du patch — entrées mortes. |
-| 3 | Les boutons `Couleur - Vert` et `Couleur - Rouge` du bus spots ont leur entrée MIDI sur l'**univers 0**, qui est une sortie : ils ne peuvent pas déclencher. |
-| 4 | Les scènes Rouge et Vert ont un fondu de 0 ms quand les 15 autres couleurs sont à 1000 ms → saut visible. |
-| 5 | Le groupe `Facade` est vide ; `Réglages` n'est utilisé par aucune fonction (voulu, ce sont des réserves). |
-| 6 | La palette 19 vaut `#ff00ff`, du magenta pur, mais garde le nom « Violet très clair ». |
+---
 
-Restes de travail en cours : la scène `New Scene`, le fader `Fader 78` et la
-RGBMatrix `Test Pattern`.
+## Ce qui change par rapport aux célébrations
+
+| | `2026-Q1` (célébrations) | Courant (concerts) |
+|---|---|---|
+| Face | 29 dimmers de la salle sur l'univers USB | 8 Axente FresnelLED WW, 3 adresses |
+| Rétro — barres | 10 ColorBand (Jardin / Cour / Fond) | 6 ColorBand |
+| Rétro — spots | 1 Spectral M800 | 8 Spectral M800 |
+| Univers utilisés | 0 (ArtNet) **et** 1 (DMX USB) | 0 seulement |
+| Canaux DMX | 73 | 59 |
+
+Hérité tel quel : les 5 RGBMatrix, le retour MIDI, l'interface web, les 18 palettes,
+les 34 scènes couleur, les deux SoloFrames, l'horloge et le mapping X-Touch.
+
+Retiré, faute de matériel équivalent dans la série : le groupe `FACE - Skye` et sa
+scène, `TOP - Chorale` et sa scène, les 10 dimmers de réserve `Réglages` et la
+Page 2 qui les pilotait.
+
+Corrigé au passage, par rapport à `2026-Q1` : les faders de mélange des spots qui
+pointaient sur un projecteur supprimé, les deux boutons dont l'entrée MIDI était sur
+l'univers de sortie, les fondus de Rouge et Vert restés à 0 ms, la palette 19
+renommée `Couleur - Magenta` puisque sa valeur est `#ff00ff`, et la scène résiduelle
+`New Scene`. Le doublon de groupe sur `Face Salle Instrument 1` disparaît avec le
+groupe `Skye`.
+
+`RGB - Spot - Abstract` tournait sur un groupe d'une seule case en `2026-Q1`, faute
+d'un seul spot patché ; avec 8 spots, l'effet prend enfin son sens.

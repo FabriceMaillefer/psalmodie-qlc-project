@@ -26,54 +26,44 @@
    </Universe>
   </InputOutputMap>
   <Fixture>
-   <Manufacturer>Showtec</Manufacturer>
-   <Model>Spectral M800 IPX</Model>
-   <Mode>AR1.D</Mode>
-   <ID>0</ID>
-   <Name>Spot RGB A</Name>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>Generic</Mode>
+   <ID>20</ID>
+   <Name>Face Chorale (x4)</Name>
    <Universe>0</Universe>
-   <Address>99</Address>
-   <Channels>4</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Chauvet</Manufacturer>
-   <Model>ColorBand Pix IP</Model>
-   <Mode>4 Channel</Mode>
-   <ID>2</ID>
-   <Name>Bar Jardin 03</Name>
-   <Universe>0</Universe>
-   <Address>59</Address>
-   <Channels>4</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Chauvet</Manufacturer>
-   <Model>ColorBand Pix IP</Model>
-   <Mode>4 Channel</Mode>
-   <ID>3</ID>
-   <Name>Bar Jardin 02</Name>
-   <Universe>0</Universe>
-   <Address>54</Address>
-   <Channels>4</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Chauvet</Manufacturer>
-   <Model>ColorBand Pix IP</Model>
-   <Mode>4 Channel</Mode>
-   <ID>4</ID>
-   <Name>Bar Fond 01</Name>
-   <Universe>0</Universe>
-   <Address>64</Address>
-   <Channels>4</Channels>
+   <Address>0</Address>
+   <Channels>1</Channels>
   </Fixture>
   <Fixture>
    <Manufacturer>Generic</Manufacturer>
    <Model>Generic</Model>
-   <Mode>1 Channel</Mode>
-   <ID>7</ID>
-   <Name>Face Salle Chorale 3</Name>
-   <Universe>1</Universe>
-   <Address>6</Address>
+   <Mode>Generic</Mode>
+   <ID>21</ID>
+   <Name>Face Discours (x2)</Name>
+   <Universe>0</Universe>
+   <Address>1</Address>
    <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>Generic</Mode>
+   <ID>22</ID>
+   <Name>Face Instru (x2)</Name>
+   <Universe>0</Universe>
+   <Address>2</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Chauvet</Manufacturer>
+   <Model>ColorBand Pix IP</Model>
+   <Mode>4 Channel</Mode>
+   <ID>8</ID>
+   <Name>Bar Fond 01</Name>
+   <Universe>0</Universe>
+   <Address>9</Address>
+   <Channels>4</Channels>
   </Fixture>
   <Fixture>
    <Manufacturer>Chauvet</Manufacturer>
@@ -82,7 +72,7 @@
    <ID>9</ID>
    <Name>Bar Fond 02</Name>
    <Universe>0</Universe>
-   <Address>69</Address>
+   <Address>14</Address>
    <Channels>4</Channels>
   </Fixture>
   <Fixture>
@@ -92,7 +82,7 @@
    <ID>10</ID>
    <Name>Bar Fond 03</Name>
    <Universe>0</Universe>
-   <Address>74</Address>
+   <Address>19</Address>
    <Channels>4</Channels>
   </Fixture>
   <Fixture>
@@ -102,7 +92,7 @@
    <ID>11</ID>
    <Name>Bar Fond 04</Name>
    <Universe>0</Universe>
-   <Address>79</Address>
+   <Address>24</Address>
    <Channels>4</Channels>
   </Fixture>
   <Fixture>
@@ -110,9 +100,9 @@
    <Model>ColorBand Pix IP</Model>
    <Mode>4 Channel</Mode>
    <ID>12</ID>
-   <Name>Bar Cour 03</Name>
+   <Name>Bar Fond 05</Name>
    <Universe>0</Universe>
-   <Address>84</Address>
+   <Address>29</Address>
    <Channels>4</Channels>
   </Fixture>
   <Fixture>
@@ -120,387 +110,127 @@
    <Model>ColorBand Pix IP</Model>
    <Mode>4 Channel</Mode>
    <ID>13</ID>
-   <Name>Bar Jardin 01</Name>
+   <Name>Bar Fond 06</Name>
+   <Universe>0</Universe>
+   <Address>34</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Showtec</Manufacturer>
+   <Model>Spectral M800 IPX</Model>
+   <Mode>AR1.D</Mode>
+   <ID>0</ID>
+   <Name>Retro Spot 1</Name>
+   <Universe>0</Universe>
+   <Address>39</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Showtec</Manufacturer>
+   <Model>Spectral M800 IPX</Model>
+   <Mode>AR1.D</Mode>
+   <ID>1</ID>
+   <Name>Retro Spot 2</Name>
+   <Universe>0</Universe>
+   <Address>44</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Showtec</Manufacturer>
+   <Model>Spectral M800 IPX</Model>
+   <Mode>AR1.D</Mode>
+   <ID>2</ID>
+   <Name>Retro Spot 3</Name>
    <Universe>0</Universe>
    <Address>49</Address>
    <Channels>4</Channels>
   </Fixture>
   <Fixture>
-   <Manufacturer>Chauvet</Manufacturer>
-   <Model>ColorBand Pix IP</Model>
-   <Mode>4 Channel</Mode>
-   <ID>14</ID>
-   <Name>Bar Cour 01</Name>
+   <Manufacturer>Showtec</Manufacturer>
+   <Model>Spectral M800 IPX</Model>
+   <Mode>AR1.D</Mode>
+   <ID>3</ID>
+   <Name>Retro Spot 4</Name>
    <Universe>0</Universe>
-   <Address>94</Address>
-   <Channels>4</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Chauvet</Manufacturer>
-   <Model>ColorBand Pix IP</Model>
-   <Mode>4 Channel</Mode>
-   <ID>15</ID>
-   <Name>Bar Cour 02</Name>
-   <Universe>0</Universe>
-   <Address>89</Address>
-   <Channels>4</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic</Model>
-   <Mode>1 Channel</Mode>
-   <ID>16</ID>
-   <Name>Face Salle Instrument 1</Name>
-   <Universe>1</Universe>
-   <Address>1</Address>
-   <Channels>1</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic</Model>
-   <Mode>1 Channel</Mode>
-   <ID>17</ID>
-   <Name>Generic Dimmer [18]</Name>
-   <Universe>1</Universe>
-   <Address>55</Address>
-   <Channels>1</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic</Model>
-   <Mode>1 Channel</Mode>
-   <ID>19</ID>
-   <Name>Face Salle Chorale 1</Name>
-   <Universe>1</Universe>
-   <Address>2</Address>
-   <Channels>1</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic</Model>
-   <Mode>1 Channel</Mode>
-   <ID>21</ID>
-   <Name>Face Salle Solo 1</Name>
-   <Universe>1</Universe>
-   <Address>0</Address>
-   <Channels>1</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic</Model>
-   <Mode>1 Channel</Mode>
-   <ID>22</ID>
-   <Name>Face Salle Solo 2</Name>
-   <Universe>1</Universe>
-   <Address>3</Address>
-   <Channels>1</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic</Model>
-   <Mode>1 Channel</Mode>
-   <ID>23</ID>
-   <Name>Generic Dimmer [24]</Name>
-   <Universe>1</Universe>
-   <Address>56</Address>
-   <Channels>1</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic</Model>
-   <Mode>1 Channel</Mode>
-   <ID>24</ID>
-   <Name>Face Salle Chorale 2</Name>
-   <Universe>1</Universe>
-   <Address>5</Address>
-   <Channels>1</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic</Model>
-   <Mode>1 Channel</Mode>
-   <ID>27</ID>
-   <Name>Generic Dimmer [28]</Name>
-   <Universe>1</Universe>
-   <Address>57</Address>
-   <Channels>1</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic</Model>
-   <Mode>1 Channel</Mode>
-   <ID>28</ID>
-   <Name>Generic Dimmer [29]</Name>
-   <Universe>1</Universe>
-   <Address>58</Address>
-   <Channels>1</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic</Model>
-   <Mode>1 Channel</Mode>
-   <ID>29</ID>
-   <Name>Generic Dimmer [30]</Name>
-   <Universe>1</Universe>
-   <Address>11</Address>
-   <Channels>1</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic</Model>
-   <Mode>1 Channel</Mode>
-   <ID>30</ID>
-   <Name>Generic Dimmer [31]</Name>
-   <Universe>1</Universe>
-   <Address>12</Address>
-   <Channels>1</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic</Model>
-   <Mode>1 Channel</Mode>
-   <ID>31</ID>
-   <Name>Generic Dimmer [32]</Name>
-   <Universe>1</Universe>
-   <Address>14</Address>
-   <Channels>1</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic</Model>
-   <Mode>1 Channel</Mode>
-   <ID>32</ID>
-   <Name>Generic Dimmer [33]</Name>
-   <Universe>1</Universe>
-   <Address>13</Address>
-   <Channels>1</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic</Model>
-   <Mode>1 Channel</Mode>
-   <ID>33</ID>
-   <Name>Generic Dimmer [34]</Name>
-   <Universe>1</Universe>
    <Address>54</Address>
-   <Channels>1</Channels>
+   <Channels>4</Channels>
   </Fixture>
   <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic</Model>
-   <Mode>1 Channel</Mode>
-   <ID>34</ID>
-   <Name>Generic Dimmer [35]</Name>
-   <Universe>1</Universe>
-   <Address>15</Address>
-   <Channels>1</Channels>
+   <Manufacturer>Showtec</Manufacturer>
+   <Model>Spectral M800 IPX</Model>
+   <Mode>AR1.D</Mode>
+   <ID>4</ID>
+   <Name>Retro Spot 5</Name>
+   <Universe>0</Universe>
+   <Address>59</Address>
+   <Channels>4</Channels>
   </Fixture>
   <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic</Model>
-   <Mode>1 Channel</Mode>
-   <ID>35</ID>
-   <Name>Face Cameo 1 Instru</Name>
-   <Universe>1</Universe>
-   <Address>100</Address>
-   <Channels>1</Channels>
+   <Manufacturer>Showtec</Manufacturer>
+   <Model>Spectral M800 IPX</Model>
+   <Mode>AR1.D</Mode>
+   <ID>5</ID>
+   <Name>Retro Spot 6</Name>
+   <Universe>0</Universe>
+   <Address>64</Address>
+   <Channels>4</Channels>
   </Fixture>
   <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic</Model>
-   <Mode>1 Channel</Mode>
-   <ID>36</ID>
-   <Name>Face Cameo 2 Chorale</Name>
-   <Universe>1</Universe>
-   <Address>101</Address>
-   <Channels>1</Channels>
+   <Manufacturer>Showtec</Manufacturer>
+   <Model>Spectral M800 IPX</Model>
+   <Mode>AR1.D</Mode>
+   <ID>6</ID>
+   <Name>Retro Spot 7</Name>
+   <Universe>0</Universe>
+   <Address>69</Address>
+   <Channels>4</Channels>
   </Fixture>
   <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic</Model>
-   <Mode>1 Channel</Mode>
-   <ID>37</ID>
-   <Name>Face Cameo 3 Chorale</Name>
-   <Universe>1</Universe>
-   <Address>102</Address>
-   <Channels>1</Channels>
+   <Manufacturer>Showtec</Manufacturer>
+   <Model>Spectral M800 IPX</Model>
+   <Mode>AR1.D</Mode>
+   <ID>7</ID>
+   <Name>Retro Spot 8</Name>
+   <Universe>0</Universe>
+   <Address>74</Address>
+   <Channels>4</Channels>
   </Fixture>
-  <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic</Model>
-   <Mode>1 Channel</Mode>
-   <ID>38</ID>
-   <Name>Face Cameo 4 Chorale</Name>
-   <Universe>1</Universe>
-   <Address>103</Address>
-   <Channels>1</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic</Model>
-   <Mode>1 Channel</Mode>
-   <ID>39</ID>
-   <Name>Face Cameo 5 Chorale</Name>
-   <Universe>1</Universe>
-   <Address>104</Address>
-   <Channels>1</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic</Model>
-   <Mode>1 Channel</Mode>
-   <ID>48</ID>
-   <Name>Top Instru 1</Name>
-   <Universe>1</Universe>
-   <Address>105</Address>
-   <Channels>1</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic</Model>
-   <Mode>1 Channel</Mode>
-   <ID>49</ID>
-   <Name>Top Chorale 1</Name>
-   <Universe>1</Universe>
-   <Address>106</Address>
-   <Channels>1</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic</Model>
-   <Mode>1 Channel</Mode>
-   <ID>50</ID>
-   <Name>Top Chorale 2</Name>
-   <Universe>1</Universe>
-   <Address>107</Address>
-   <Channels>1</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic</Model>
-   <Mode>1 Channel</Mode>
-   <ID>51</ID>
-   <Name>Top Chorale 3</Name>
-   <Universe>1</Universe>
-   <Address>108</Address>
-   <Channels>1</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic</Model>
-   <Mode>1 Channel</Mode>
-   <ID>52</ID>
-   <Name>Top Instru 2</Name>
-   <Universe>1</Universe>
-   <Address>112</Address>
-   <Channels>1</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic</Model>
-   <Mode>1 Channel</Mode>
-   <ID>53</ID>
-   <Name>Top Chorale 5</Name>
-   <Universe>1</Universe>
-   <Address>124</Address>
-   <Channels>1</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic</Model>
-   <Mode>1 Channel</Mode>
-   <ID>54</ID>
-   <Name>Top Instru 3 (piano)</Name>
-   <Universe>1</Universe>
-   <Address>116</Address>
-   <Channels>1</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic</Model>
-   <Mode>1 Channel</Mode>
-   <ID>55</ID>
-   <Name>Top Chorale 4</Name>
-   <Universe>1</Universe>
-   <Address>120</Address>
-   <Channels>1</Channels>
-  </Fixture>
-  <FixtureGroup ID="0">
-   <Name>Facade</Name>
-   <Size X="2" Y="1"/>
-  </FixtureGroup>
-  <FixtureGroup ID="1">
-   <Name>FACE - Skye</Name>
-   <Size X="2" Y="1"/>
-   <Head X="0" Y="0" Fixture="16">0</Head>
-  </FixtureGroup>
   <FixtureGroup ID="2">
    <Name>FACE - Instru</Name>
-   <Size X="4" Y="2"/>
-   <Head X="0" Y="0" Fixture="48">0</Head>
-   <Head X="2" Y="0" Fixture="52">0</Head>
-   <Head X="3" Y="0" Fixture="54">0</Head>
-   <Head X="1" Y="1" Fixture="35">0</Head>
+   <Size X="1" Y="1"/>
+   <Head X="0" Y="0" Fixture="22">0</Head>
   </FixtureGroup>
   <FixtureGroup ID="3">
    <Name>FACE - Chorale</Name>
-   <Size X="6" Y="2"/>
-   <Head X="2" Y="0" Fixture="36">0</Head>
-   <Head X="3" Y="0" Fixture="37">0</Head>
-   <Head X="4" Y="0" Fixture="38">0</Head>
-   <Head X="5" Y="0" Fixture="39">0</Head>
-   <Head X="0" Y="1" Fixture="16">0</Head>
-   <Head X="1" Y="1" Fixture="19">0</Head>
-   <Head X="3" Y="1" Fixture="24">0</Head>
-   <Head X="4" Y="1" Fixture="7">0</Head>
+   <Size X="1" Y="1"/>
+   <Head X="0" Y="0" Fixture="20">0</Head>
   </FixtureGroup>
   <FixtureGroup ID="4">
    <Name>FACE - Discours</Name>
-   <Size X="2" Y="1"/>
+   <Size X="1" Y="1"/>
    <Head X="0" Y="0" Fixture="21">0</Head>
-   <Head X="1" Y="0" Fixture="22">0</Head>
   </FixtureGroup>
   <FixtureGroup ID="5">
    <Name>Retro - Spot</Name>
-   <Size X="1" Y="1"/>
+   <Size X="8" Y="1"/>
    <Head X="0" Y="0" Fixture="0">0</Head>
+   <Head X="1" Y="0" Fixture="1">0</Head>
+   <Head X="2" Y="0" Fixture="2">0</Head>
+   <Head X="3" Y="0" Fixture="3">0</Head>
+   <Head X="4" Y="0" Fixture="4">0</Head>
+   <Head X="5" Y="0" Fixture="5">0</Head>
+   <Head X="6" Y="0" Fixture="6">0</Head>
+   <Head X="7" Y="0" Fixture="7">0</Head>
   </FixtureGroup>
   <FixtureGroup ID="6">
    <Name>Retro - Barres</Name>
-   <Size X="10" Y="4"/>
-   <Head X="3" Y="0" Fixture="4">0</Head>
-   <Head X="4" Y="0" Fixture="9">0</Head>
-   <Head X="5" Y="0" Fixture="10">0</Head>
-   <Head X="6" Y="0" Fixture="11">0</Head>
-   <Head X="2" Y="1" Fixture="2">0</Head>
-   <Head X="7" Y="1" Fixture="12">0</Head>
-   <Head X="1" Y="2" Fixture="3">0</Head>
-   <Head X="8" Y="2" Fixture="15">0</Head>
-   <Head X="0" Y="3" Fixture="13">0</Head>
-   <Head X="9" Y="3" Fixture="14">0</Head>
-  </FixtureGroup>
-  <FixtureGroup ID="7">
-   <Name>Réglages</Name>
-   <Size X="10" Y="1"/>
-   <Head X="0" Y="0" Fixture="17">0</Head>
-   <Head X="1" Y="0" Fixture="23">0</Head>
-   <Head X="2" Y="0" Fixture="27">0</Head>
-   <Head X="3" Y="0" Fixture="28">0</Head>
-   <Head X="4" Y="0" Fixture="29">0</Head>
-   <Head X="5" Y="0" Fixture="30">0</Head>
-   <Head X="6" Y="0" Fixture="31">0</Head>
-   <Head X="7" Y="0" Fixture="32">0</Head>
-   <Head X="8" Y="0" Fixture="33">0</Head>
-   <Head X="9" Y="0" Fixture="34">0</Head>
-  </FixtureGroup>
-  <FixtureGroup ID="8">
-   <Name>TOP - Chorale</Name>
-   <Size X="5" Y="2"/>
-   <Head X="1" Y="0" Fixture="55">0</Head>
-   <Head X="3" Y="0" Fixture="53">0</Head>
-   <Head X="0" Y="1" Fixture="49">0</Head>
-   <Head X="2" Y="1" Fixture="50">0</Head>
-   <Head X="4" Y="1" Fixture="51">0</Head>
+   <Size X="6" Y="1"/>
+   <Head X="0" Y="0" Fixture="8">0</Head>
+   <Head X="1" Y="0" Fixture="9">0</Head>
+   <Head X="2" Y="0" Fixture="10">0</Head>
+   <Head X="3" Y="0" Fixture="11">0</Head>
+   <Head X="4" Y="0" Fixture="12">0</Head>
+   <Head X="5" Y="0" Fixture="13">0</Head>
   </FixtureGroup>
   <Palette ID="0" Type="Color" Name="Couleur Bleu" Value="#0000ff000000"/>
   <Palette ID="1" Type="Color" Name="Couleur Jaune" Value="#ffff33000000"/>
@@ -519,7 +249,7 @@
   <Palette ID="14" Type="Color" Name="Couleur - Orange Clair" Value="#eb9869000000"/>
   <Palette ID="15" Type="Color" Name="Couleur - Brun foncé" Value="#6b3928000000"/>
   <Palette ID="18" Type="Color" Name="Couleur - Jaune très clair" Value="#decdb0000000"/>
-  <Palette ID="19" Type="Color" Name="Couleur - Violet très clair" Value="#ff00ff000000"/>
+  <Palette ID="19" Type="Color" Name="Couleur - Magenta" Value="#ff00ff000000"/>
   <Function ID="0" Type="Scene" Name="Couleur - Blanc - A" Path="Couleurs">
    <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
    <FixtureGroup ID="5"/>
@@ -597,22 +327,22 @@
    <Property Name="presetIndex" Value="Sunset"/>
   </Function>
   <Function ID="14" Type="Scene" Name="Couleur - Rouge - A" Path="Couleurs">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
    <FixtureGroup ID="5"/>
    <Palette ID="5"/>
   </Function>
   <Function ID="15" Type="Scene" Name="Couleur - Rouge - B" Path="Couleurs">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
    <FixtureGroup ID="6"/>
    <Palette ID="5"/>
   </Function>
   <Function ID="16" Type="Scene" Name="Couleur - Vert - B" Path="Couleurs">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
    <FixtureGroup ID="6"/>
    <Palette ID="6"/>
   </Function>
   <Function ID="17" Type="Scene" Name="Couleur - Vert - A" Path="Couleurs">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
    <FixtureGroup ID="5"/>
    <Palette ID="6"/>
   </Function>
@@ -738,18 +468,15 @@
    <FixtureGroup ID="6"/>
    <Palette ID="18"/>
   </Function>
-  <Function ID="40" Type="Scene" Name="Couleur - Violet très clair - A" Path="Couleurs">
+  <Function ID="40" Type="Scene" Name="Couleur - Magenta - A" Path="Couleurs">
    <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
    <FixtureGroup ID="5"/>
    <Palette ID="19"/>
   </Function>
-  <Function ID="41" Type="Scene" Name="Couleur - Violet très clair - B" Path="Couleurs">
+  <Function ID="41" Type="Scene" Name="Couleur - Magenta - B" Path="Couleurs">
    <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
    <FixtureGroup ID="6"/>
    <Palette ID="19"/>
-  </Function>
-  <Function ID="42" Type="Scene" Name="New Scene" Hidden="True">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
   </Function>
   <Function ID="43" Type="RGBMatrix" Name="RGB - Spot - Abstract">
    <Speed FadeIn="500" FadeOut="500" Duration="500"/>
@@ -773,67 +500,6 @@
    <FixtureGroup>6</FixtureGroup>
    <Property Name="orientation" Value="Horizontal"/>
   </Function>
-  <Function ID="45" Type="Scene" Name="FACE - Skye - Intensité">
-   <Speed FadeIn="1000" FadeOut="0" Duration="0"/>
-   <FixtureGroup ID="1"/>
-   <Palette ID="3"/>
-  </Function>
-  <Function ID="46" Type="Scene" Name="TOP - Chorale - Intensité">
-   <Speed FadeIn="1000" FadeOut="0" Duration="0"/>
-   <FixtureGroup ID="8"/>
-   <Palette ID="3"/>
-  </Function>
-  <Monitor DisplayMode="0" ShowLabels="0">
-   <Font>Arial,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
-   <ChannelStyle>0</ChannelStyle>
-   <ValueStyle>0</ValueStyle>
-   <Grid Width="7" Height="4" Depth="5" Units="0" POV="1"/>
-   <StageItem>3</StageItem>
-   <FxItem ID="0" XPos="-492.718" YPos="56.4571" ZPos="2867.81" XRot="180"/>
-   <FxItem ID="0" Linked="1" Name="Spot RGB A (lié 1)" XPos="2465.35" YPos="56.4571" ZPos="650.124" XRot="180"/>
-   <FxItem ID="0" Linked="2" Name="Spot RGB A (lié 2)" XPos="7090.1" YPos="56.4571" ZPos="1592.13" XRot="180"/>
-   <FxItem ID="0" Linked="3" Name="Spot RGB A (lié 3)" XPos="-201" YPos="0" ZPos="4883.27" XRot="180"/>
-   <FxItem ID="0" Linked="4" Name="Spot RGB A (lié 4)" XPos="6801" YPos="0" ZPos="4815" XRot="180"/>
-   <FxItem ID="2" XPos="-450.063" YPos="56.4571" ZPos="974.981" XRot="300" YRot="-45"/>
-   <FxItem ID="3" XPos="-807.653" YPos="56.4571" ZPos="2190.84" XRot="60" YRot="90"/>
-   <FxItem ID="4" XPos="1469.35" YPos="46.0584" ZPos="640.212" XRot="300"/>
-   <FxItem ID="7" XPos="5784.38" YPos="2785.92" ZPos="6065.78"/>
-   <FxItem ID="9" XPos="2707.4" YPos="56.4571" ZPos="666.218" XRot="300"/>
-   <FxItem ID="10" XPos="3971.46" YPos="56.4571" ZPos="692.224" XRot="300"/>
-   <FxItem ID="11" XPos="5183.5" YPos="56.4571" ZPos="692.224" XRot="300"/>
-   <FxItem ID="12" XPos="6346.63" YPos="56.4571" ZPos="1018.21" XRot="300" YRot="45"/>
-   <FxItem ID="13" XPos="-778.351" YPos="40.1284" ZPos="3579.87" XRot="60" YRot="90"/>
-   <FxItem ID="14" XPos="6753.23" YPos="56.4571" ZPos="3450.37" XRot="300" YRot="90"/>
-   <FxItem ID="15" XPos="6740.82" YPos="56.4571" ZPos="2218.79" XRot="300" YRot="90"/>
-   <FxItem ID="16" XPos="737.808" YPos="2785.92" ZPos="6103.44"/>
-   <FxItem ID="17" XPos="4844.85" YPos="0" ZPos="1428.3"/>
-   <FxItem ID="19" XPos="2783.82" YPos="2785.92" ZPos="6087.09"/>
-   <FxItem ID="21" XPos="2196.54" YPos="2785.92" ZPos="5419.92"/>
-   <FxItem ID="22" XPos="3938.85" YPos="2785.92" ZPos="5431.92"/>
-   <FxItem ID="23" XPos="4029.81" YPos="0" ZPos="1453.38"/>
-   <FxItem ID="24" XPos="4685.12" YPos="2785.92" ZPos="6109.48"/>
-   <FxItem ID="27" XPos="3026.69" YPos="0" ZPos="1541.15"/>
-   <FxItem ID="28" XPos="2249.27" YPos="0" ZPos="1516.07"/>
-   <FxItem ID="29" XPos="1384.08" YPos="0" ZPos="1578.77"/>
-   <FxItem ID="30" XPos="1409.16" YPos="0" ZPos="2544.27"/>
-   <FxItem ID="31" XPos="2249.27" YPos="0" ZPos="2519.19"/>
-   <FxItem ID="32" XPos="3051.77" YPos="0" ZPos="2519.19"/>
-   <FxItem ID="33" XPos="3992.19" YPos="0" ZPos="2531.73"/>
-   <FxItem ID="34" XPos="4907.54" YPos="0" ZPos="2506.65"/>
-   <FxItem ID="35" XPos="110.575" YPos="0" ZPos="6524.8"/>
-   <FxItem ID="36" XPos="1749.01" YPos="0" ZPos="6420.3"/>
-   <FxItem ID="37" XPos="3780.33" YPos="0" ZPos="6420.3"/>
-   <FxItem ID="38" XPos="5299.57" YPos="0" ZPos="6522.27"/>
-   <FxItem ID="39" XPos="6288.13" YPos="0" ZPos="6495.54"/>
-   <FxItem ID="48" XPos="378.772" YPos="0" ZPos="4516.13"/>
-   <FxItem ID="49" XPos="2330.91" YPos="0" ZPos="4516.13"/>
-   <FxItem ID="50" XPos="4151.92" YPos="0" ZPos="4486.99"/>
-   <FxItem ID="51" XPos="5870.97" YPos="0" ZPos="4559.83"/>
-   <FxItem ID="52" XPos="772.112" YPos="0" ZPos="4151.93"/>
-   <FxItem ID="53" XPos="5404.79" YPos="0" ZPos="4224.77"/>
-   <FxItem ID="54" XPos="1908.43" YPos="0" ZPos="4151.92"/>
-   <FxItem ID="55" XPos="3773.15" YPos="0" ZPos="4079.08"/>
-  </Monitor>
  </Engine>
  <VirtualConsole>
   <Frame Caption="Page 1" ID="0">
@@ -986,7 +652,7 @@
       <Function ID="23"/>
       <Action>Toggle</Action>
      </Button>
-     <Button Caption="Couleur - Violet très clair" ID="41">
+     <Button Caption="Couleur - Magenta" ID="41">
       <WindowState Visible="True" X="343" Y="202" Width="64" Height="64"/>
       <Appearance>
        <BackgroundColor>4286661227</BackgroundColor>
@@ -1029,7 +695,7 @@
       <Action>Toggle</Action>
      </Button>
     </SoloFrame>
-    <Frame Caption="Couleur  Spot" ID="57">
+    <Frame Caption="Melange Spot" ID="57">
      <WindowState Visible="True" X="594" Y="30" Width="274" Height="320"/>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
@@ -1049,6 +715,12 @@
       <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="0">1</Channel>
        <Channel Fixture="1">1</Channel>
+       <Channel Fixture="2">1</Channel>
+       <Channel Fixture="3">1</Channel>
+       <Channel Fixture="4">1</Channel>
+       <Channel Fixture="5">1</Channel>
+       <Channel Fixture="6">1</Channel>
+       <Channel Fixture="7">1</Channel>
       </Level>
      </Slider>
      <Slider Caption="Blue" ID="60" WidgetStyle="Slider" InvertedAppearance="false">
@@ -1064,6 +736,12 @@
       <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="0">3</Channel>
        <Channel Fixture="1">3</Channel>
+       <Channel Fixture="2">3</Channel>
+       <Channel Fixture="3">3</Channel>
+       <Channel Fixture="4">3</Channel>
+       <Channel Fixture="5">3</Channel>
+       <Channel Fixture="6">3</Channel>
+       <Channel Fixture="7">3</Channel>
       </Level>
      </Slider>
      <Slider Caption="Green" ID="59" WidgetStyle="Slider" InvertedAppearance="false">
@@ -1079,10 +757,16 @@
       <Level LowLimit="0" HighLimit="255" Value="0">
        <Channel Fixture="0">2</Channel>
        <Channel Fixture="1">2</Channel>
+       <Channel Fixture="2">2</Channel>
+       <Channel Fixture="3">2</Channel>
+       <Channel Fixture="4">2</Channel>
+       <Channel Fixture="5">2</Channel>
+       <Channel Fixture="6">2</Channel>
+       <Channel Fixture="7">2</Channel>
       </Level>
      </Slider>
     </Frame>
-    <Frame Caption="Couleur Barres" ID="53">
+    <Frame Caption="Melange Barres" ID="53">
      <WindowState Visible="True" X="594" Y="365" Width="274" Height="320"/>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
@@ -1100,16 +784,12 @@
        <Input ID="1" Universe="2" Channel="141"/>
       </Reset>
       <Level LowLimit="0" HighLimit="255" Value="0">
-       <Channel Fixture="2">2</Channel>
-       <Channel Fixture="3">2</Channel>
-       <Channel Fixture="4">2</Channel>
+       <Channel Fixture="8">2</Channel>
        <Channel Fixture="9">2</Channel>
        <Channel Fixture="10">2</Channel>
        <Channel Fixture="11">2</Channel>
        <Channel Fixture="12">2</Channel>
        <Channel Fixture="13">2</Channel>
-       <Channel Fixture="14">2</Channel>
-       <Channel Fixture="15">2</Channel>
       </Level>
      </Slider>
      <Slider Caption="Green" ID="55" WidgetStyle="Slider" InvertedAppearance="false">
@@ -1123,16 +803,12 @@
        <Input ID="1" Universe="2" Channel="139"/>
       </Reset>
       <Level LowLimit="0" HighLimit="255" Value="0">
-       <Channel Fixture="2">1</Channel>
-       <Channel Fixture="3">1</Channel>
-       <Channel Fixture="4">1</Channel>
+       <Channel Fixture="8">1</Channel>
        <Channel Fixture="9">1</Channel>
        <Channel Fixture="10">1</Channel>
        <Channel Fixture="11">1</Channel>
        <Channel Fixture="12">1</Channel>
        <Channel Fixture="13">1</Channel>
-       <Channel Fixture="14">1</Channel>
-       <Channel Fixture="15">1</Channel>
       </Level>
      </Slider>
      <Slider Caption="Red" ID="54" WidgetStyle="Slider" InvertedAppearance="false">
@@ -1146,16 +822,12 @@
        <Input ID="1" Universe="2" Channel="137"/>
       </Reset>
       <Level LowLimit="0" HighLimit="255" Value="0">
-       <Channel Fixture="2">0</Channel>
-       <Channel Fixture="3">0</Channel>
-       <Channel Fixture="4">0</Channel>
+       <Channel Fixture="8">0</Channel>
        <Channel Fixture="9">0</Channel>
        <Channel Fixture="10">0</Channel>
        <Channel Fixture="11">0</Channel>
        <Channel Fixture="12">0</Channel>
        <Channel Fixture="13">0</Channel>
-       <Channel Fixture="14">0</Channel>
-       <Channel Fixture="15">0</Channel>
       </Level>
      </Slider>
     </Frame>
@@ -1226,7 +898,7 @@
       <Function ID="6"/>
       <Action>Toggle</Action>
      </Button>
-     <Button Caption="Couleur - Violet très clair" ID="47">
+     <Button Caption="Couleur - Magenta" ID="47">
       <WindowState Visible="True" X="343" Y="202" Width="64" Height="64"/>
       <Appearance>
        <BackgroundColor>4286661227</BackgroundColor>
@@ -1241,7 +913,7 @@
       </Appearance>
       <Function ID="14"/>
       <Action>Toggle</Action>
-      <Input ID="0" Universe="0" Channel="145"/>
+      <Input ID="0" Universe="2" Channel="145"/>
      </Button>
      <Button Caption="RGB - Spot - Abstract" ID="61">
       <WindowState Visible="True" X="426" Y="198" Width="60" Height="76"/>
@@ -1317,7 +989,7 @@
       </Appearance>
       <Function ID="17"/>
       <Action>Toggle</Action>
-      <Input ID="0" Universe="0" Channel="144"/>
+      <Input ID="0" Universe="2" Channel="144"/>
      </Button>
     </SoloFrame>
     <Slider Caption="Intensité Spot" ID="12" WidgetStyle="Slider" InvertedAppearance="false">
@@ -1383,27 +1055,6 @@
       <Input ID="2" Universe="2" Channel="175"/>
      </Flash>
     </Slider>
-    <Slider Caption="TOP Chorale" ID="9" WidgetStyle="Slider" InvertedAppearance="false">
-     <WindowState Visible="True" X="45" Y="30" Width="91" Height="320"/>
-     <Appearance>
-      <BackgroundColor>4282664004</BackgroundColor>
-     </Appearance>
-     <Input ID="0" Universe="2" Channel="5"/>
-     <SliderMode ValueDisplayStyle="Exact">Adjust</SliderMode>
-     <Level LowLimit="0" HighLimit="255" Value="0"/>
-     <Adjust Attribute="0" Function="46"/>
-    </Slider>
-    <Slider Caption="Skye" ID="8" WidgetStyle="Slider" InvertedAppearance="false">
-     <WindowState Visible="True" X="137" Y="30" Width="91" Height="320"/>
-     <Appearance>
-      <ForegroundColor>4278190080</ForegroundColor>
-      <BackgroundColor>4288282521</BackgroundColor>
-     </Appearance>
-     <Input ID="0" Universe="2" Channel="6"/>
-     <SliderMode ValueDisplayStyle="Exact">Adjust</SliderMode>
-     <Level LowLimit="0" HighLimit="255" Value="0"/>
-     <Adjust Attribute="0" Function="45"/>
-    </Slider>
     <Slider Caption="Discours" ID="6" WidgetStyle="Slider" InvertedAppearance="false">
      <WindowState Visible="True" X="228" Y="30" Width="91" Height="320"/>
      <Appearance>
@@ -1450,36 +1101,6 @@
     </Appearance>
     <SliderMode ValueDisplayStyle="Percentage">GrandMaster</SliderMode>
     <Level LowLimit="0" HighLimit="255" Value="255"/>
-   </Slider>
-  </Frame>
-  <Frame Caption="Page 2" ID="1">
-   <Appearance>
-    <Font>Roboto Condensed,16,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
-   </Appearance>
-   <WindowState Visible="True" X="0" Y="0" Width="1920" Height="1080"/>
-   <AllowResize>False</AllowResize>
-   <ShowHeader>False</ShowHeader>
-   <ShowEnableButton>True</ShowEnableButton>
-   <Collapsed>False</Collapsed>
-   <Disabled>False</Disabled>
-   <Slider Caption="Fader 78" ID="77" WidgetStyle="Slider" InvertedAppearance="false">
-    <WindowState Visible="True" X="76" Y="182" Width="121" Height="487"/>
-    <Appearance>
-     <BackgroundColor>4282664004</BackgroundColor>
-    </Appearance>
-    <SliderMode ValueDisplayStyle="Exact">Level</SliderMode>
-    <Level LowLimit="0" HighLimit="255" Value="255">
-     <Channel Fixture="17">0</Channel>
-     <Channel Fixture="23">0</Channel>
-     <Channel Fixture="27">0</Channel>
-     <Channel Fixture="28">0</Channel>
-     <Channel Fixture="29">0</Channel>
-     <Channel Fixture="30">0</Channel>
-     <Channel Fixture="31">0</Channel>
-     <Channel Fixture="32">0</Channel>
-     <Channel Fixture="33">0</Channel>
-     <Channel Fixture="34">0</Channel>
-    </Level>
    </Slider>
   </Frame>
  </VirtualConsole>
