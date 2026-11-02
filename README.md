@@ -16,11 +16,17 @@ git checkout 2026-Q1          # ou revenir entièrement à cet état
 
 1. **Adresser les projecteurs** selon le tableau plus bas (à faire une seule fois).
 2. **Brancher la X-Touch Compact en USB**, puis l'allumer.
-3. **Régler le réseau** de l'ordinateur sur le sous-réseau `192.168.1.x`
-   (le nœud ArtNet est en `192.168.1.104`).
+3. **Régler le réseau** de l'ordinateur en IP fixe `192.168.1.104` : c'est l'interface
+   par laquelle QLC+ envoie l'ArtNet, vers le nœud en `192.168.1.20`.
 4. **Lancer QLC+ 5.3**, puis ouvrir `Concert Light 2026_1.qxw`.
    La console virtuelle s'affiche directement.
-5. **Monter le fader MASTER** à fond — sans lui, rien ne sort.
+5. **Vérifier les entrées/sorties** (onglet Entrées/Sorties) — à reconnecter chaque fois
+   que le projet vient d'un autre ordinateur, ou a été enregistré sans le matériel
+   branché (QLC+ remplace alors les périphériques absents par « None ») :
+   - univers `Psalmo` : sortie **ArtNet**, interface `192.168.1.104`, IP de sortie
+     `192.168.1.20`, univers ArtNet 1 ;
+   - univers `MIDI Input` : entrée **et** retour sur `X-TOUCH COMPACT`.
+6. **Monter le fader MASTER** à fond — sans lui, rien ne sort.
 
 Rien à installer côté définitions de projecteurs : elles sont fournies avec QLC+ 5.3.
 
@@ -100,8 +106,8 @@ zéro, ou désactiver le bouton de couleur.
 | Symptôme | À vérifier |
 |---|---|
 | Rien ne s'allume | Le fader `MASTER` est-il en haut ? Le `Blackout` est-il enclenché ? |
-| Rien ne s'allume, MASTER en haut | Réseau sur `192.168.1.x` ? Câble du nœud ArtNet ? |
-| La X-Touch ne répond pas | Elle doit être branchée **avant** le lancement de QLC+. Relancer QLC+. |
+| Rien ne s'allume, MASTER en haut | Ordinateur en `192.168.1.104` ? Câble du nœud ArtNet ? Sortie ArtNet de l'univers `Psalmo` bien sélectionnée (Entrées/Sorties) ? |
+| La X-Touch ne répond pas | Elle doit être branchée **avant** le lancement de QLC+. Relancer QLC+, puis vérifier qu'elle est bien choisie en entrée et en retour de l'univers `MIDI Input`. |
 | Un projecteur reste noir ou prend la mauvaise couleur | Son adresse DMX, à comparer au tableau ci-dessous. Lancer `Test Pattern` pour les barres. |
 | Les effets animés ne bougent pas | Les barres doivent avoir des adresses **différentes** (voir la note sur les adresses partagées) |
 | Une couleur ne part pas | Désactiver le bouton de couleur, et remettre à zéro les faders de mélange |
@@ -114,7 +120,7 @@ zéro, ou désactiver le bouton de couleur.
 
 | ID | Nom | Rôle |
 |---|---|---|
-| 0 | `Psalmo` | sortie DMX principale — ArtNet vers `192.168.1.104` ligne 8 (IP de sortie `192.168.1.20`, univers 1) |
+| 0 | `Psalmo` | sortie DMX principale — ArtNet par l'interface `192.168.1.104` (IP de l'ordinateur, ligne 8) vers le nœud `192.168.1.20`, univers 1 |
 | 1 | `USB (Salle)` | DMX USB PRO (S/N EN507410) — raccordement au système de la salle d'accueil, non utilisé par ce patch |
 | 2 | `MIDI Input` | X-Touch Compact, avec retour (`Feedback`) |
 
@@ -156,8 +162,9 @@ supprimerait l'animation.
 ⚠️ L'ordre diffère entre les barres et les spots : le ColorBand est `R G B Dimmer`,
 le Spectral `Dimmer R G B`. C'est le piège à retenir pour toute modification manuelle.
 
-Les Axente sont patchés en **dimmer générique** QLC+ (`Generic / Generic`, 1 canal) :
-aucun fichier de définition à installer, l'engine la construit à la volée.
+Les Axente sont patchés en **dimmer générique** QLC+ (`Generic / Generic`, mode
+`1 Channel`, appelé `Generic` avant QLC+ 5.3) : aucun fichier de définition à
+installer, l'engine la construit à la volée.
 
 ### Structure du projet
 
@@ -205,6 +212,32 @@ par erreur sur un univers de sortie. Code de sortie non nul s'il trouve un probl
 
 Il ne relève **aucun problème** sur cette configuration, contre 6 sur la version
 finale des célébrations (tag `2026-Q1`) et 51 sur la toute première.
+
+### Versionner le projet
+
+QLC+ 5 enregistre les widgets de chaque cadre de la console dans un ordre qui change
+à chaque sauvegarde, même sans rien modifier : il les parcourt par adresse mémoire.
+Un filtre git les remet dans l'ordre de leur ID au moment du `git add` et du
+`git diff`, pour que le diff ne montre que les vrais changements. Le fichier ouvert par
+QLC+ n'est pas modifié. À activer une fois par clone (le `.gitattributes` l'applique
+déjà aux `*.qxw`) :
+
+```bash
+git config filter.qxw.clean "python3 tools/normalize_qxw.py"
+```
+
+Changements qu'une sauvegarde peut encore faire apparaître sans que rien ait été
+modifié dans le projet :
+
+- `<Author>` : le nom de la session qui a enregistré ;
+- `<InputOutputMap>` : un périphérique absent au moment de l'enregistrement (X-Touch
+  débranchée, ordinateur hors du réseau `192.168.1.104`) est enregistré en `None`,
+  et la sortie ArtNet perd son IP de sortie. Ne pas le commiter tel quel : reprendre
+  ce bloc de la version précédente (`git checkout -p`), ou le reconnecter (voir
+  Démarrage, étape 5).
+
+Deux widgets qui se chevauchent passeraient l'un sur l'autre au hasard des
+sauvegardes : il n'y en a aucun, à garder ainsi en déplaçant un widget.
 
 ---
 

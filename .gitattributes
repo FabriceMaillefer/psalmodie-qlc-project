@@ -1,0 +1,2 @@
+# Ordre stable des widgets de la console a chaque sauvegarde QLC+ (voir tools/normalize_qxw.py)
+*.qxw filter=qxw
