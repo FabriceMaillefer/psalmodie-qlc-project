@@ -504,25 +504,25 @@
    <Font>Arial,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
    <ChannelStyle>0</ChannelStyle>
    <ValueStyle>0</ValueStyle>
-   <Grid Width="5" Height="3" Depth="5" Units="0" POV="1"/>
-   <StageItem>0</StageItem>
-   <FxItem ID="0" XPos="0" YPos="1000" ZPos="0"/>
-   <FxItem ID="1" XPos="285" YPos="1000" ZPos="0"/>
-   <FxItem ID="2" XPos="570" YPos="1000" ZPos="0"/>
-   <FxItem ID="3" XPos="855" YPos="1000" ZPos="0"/>
-   <FxItem ID="4" XPos="1140" YPos="1000" ZPos="0"/>
-   <FxItem ID="5" XPos="1425" YPos="1000" ZPos="0"/>
-   <FxItem ID="6" XPos="1710" YPos="1000" ZPos="0"/>
-   <FxItem ID="7" XPos="1995" YPos="1000" ZPos="0"/>
-   <FxItem ID="8" XPos="2280" YPos="1000" ZPos="0"/>
-   <FxItem ID="9" XPos="3323" YPos="1000" ZPos="0"/>
-   <FxItem ID="10" XPos="0" YPos="1000" ZPos="230"/>
-   <FxItem ID="11" XPos="1043" YPos="1000" ZPos="230"/>
-   <FxItem ID="12" XPos="2086" YPos="1000" ZPos="230"/>
-   <FxItem ID="13" XPos="3129" YPos="1000" ZPos="230"/>
-   <FxItem ID="20" XPos="4366" YPos="1000" ZPos="0"/>
-   <FxItem ID="21" XPos="0" YPos="1000" ZPos="380"/>
-   <FxItem ID="22" XPos="350" YPos="1000" ZPos="380"/>
+   <Grid Width="7" Height="4" Depth="5" Units="0" POV="1"/>
+   <StageItem>3</StageItem>
+   <FxItem ID="8" XPos="300" YPos="56.4571" ZPos="650" XRot="300"/>
+   <FxItem ID="9" XPos="1540" YPos="56.4571" ZPos="650" XRot="300"/>
+   <FxItem ID="10" XPos="2780" YPos="56.4571" ZPos="650" XRot="300"/>
+   <FxItem ID="11" XPos="4020" YPos="56.4571" ZPos="650" XRot="300"/>
+   <FxItem ID="12" XPos="5260" YPos="56.4571" ZPos="650" XRot="300"/>
+   <FxItem ID="13" XPos="6500" YPos="56.4571" ZPos="650" XRot="300"/>
+   <FxItem ID="0" XPos="300" YPos="56.4571" ZPos="2800" XRot="180"/>
+   <FxItem ID="1" XPos="1185.71" YPos="56.4571" ZPos="2800" XRot="180"/>
+   <FxItem ID="2" XPos="2071.43" YPos="56.4571" ZPos="2800" XRot="180"/>
+   <FxItem ID="3" XPos="2957.14" YPos="56.4571" ZPos="2800" XRot="180"/>
+   <FxItem ID="4" XPos="3842.86" YPos="56.4571" ZPos="2800" XRot="180"/>
+   <FxItem ID="5" XPos="4728.57" YPos="56.4571" ZPos="2800" XRot="180"/>
+   <FxItem ID="6" XPos="5614.29" YPos="56.4571" ZPos="2800" XRot="180"/>
+   <FxItem ID="7" XPos="6500" YPos="56.4571" ZPos="2800" XRot="180"/>
+   <FxItem ID="22" XPos="900" YPos="2785.92" ZPos="6000"/>
+   <FxItem ID="21" XPos="3100" YPos="2785.92" ZPos="6000"/>
+   <FxItem ID="20" XPos="5000" YPos="2785.92" ZPos="6000"/>
   </Monitor>
  </Engine>
  <VirtualConsole>
@@ -538,14 +538,14 @@
    <Collapsed>False</Collapsed>
    <Disabled>False</Disabled>
    <Frame Caption="Facades" ID="2">
-    <WindowState Visible="True" X="914" Y="167" Width="564" Height="518"/>
+    <WindowState Visible="True" X="914" Y="167" Width="378" Height="518"/>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
     <ShowEnableButton>False</ShowEnableButton>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
     <Slider Caption="Chorale" ID="3" WidgetStyle="Slider" InvertedAppearance="false">
-     <WindowState Visible="True" X="411" Y="30" Width="94" Height="316"/>
+     <WindowState Visible="True" X="228" Y="30" Width="91" Height="320"/>
      <Appearance>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4294967091</BackgroundColor>
@@ -559,7 +559,7 @@
      </Flash>
     </Slider>
     <Slider Caption="Discours" ID="6" WidgetStyle="Slider" InvertedAppearance="false">
-     <WindowState Visible="True" X="228" Y="30" Width="91" Height="320"/>
+     <WindowState Visible="True" X="45" Y="30" Width="91" Height="320"/>
      <Appearance>
       <ForegroundColor>4278190080</ForegroundColor>
       <BackgroundColor>4294956697</BackgroundColor>
@@ -573,7 +573,7 @@
      </Flash>
     </Slider>
     <Slider Caption="Instru" ID="21" WidgetStyle="Slider" InvertedAppearance="false">
-     <WindowState Visible="True" X="320" Y="30" Width="91" Height="316"/>
+     <WindowState Visible="True" X="137" Y="30" Width="91" Height="320"/>
      <Appearance>
       <BackgroundColor>4288322048</BackgroundColor>
      </Appearance>
@@ -815,7 +815,7 @@
      </Button>
     </SoloFrame>
     <SoloFrame Caption="Couleur Spot" ID="48">
-     <WindowState Visible="True" X="0" Y="30" Width="487" Height="335"/>
+     <WindowState Visible="True" X="0" Y="30" Width="490" Height="335"/>
      <AllowResize>True</AllowResize>
      <ShowHeader>True</ShowHeader>
      <ShowEnableButton>True</ShowEnableButton>

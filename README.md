@@ -43,14 +43,15 @@ X-Touch suivent l'état de la console (retour MIDI actif).
 Trois faders dans le cadre **Facades**, un par zone. Ce sont des blancs fixes, il n'y
 a pas de réglage de couleur ni de température.
 
+De gauche à droite, à l'écran comme sur la X-Touch :
+
 | Fader écran | Fader X-Touch | Pilote |
 |---|---|---|
-| `Chorale` | 9 | les 4 fresnels de la chorale |
-| `Instru` | 8 | les 2 fresnels de l'instrument |
 | `Discours` | 7 | les 2 fresnels du discours |
+| `Instru` | 8 | les 2 fresnels de l'instrument |
+| `Chorale` | 9 | les 4 fresnels de la chorale |
 
-⚠️ **L'ordre à l'écran n'est pas l'ordre sur la X-Touch.** À l'écran, de gauche à
-droite : Chorale, Instru, Discours. Sur la surface : Discours, Instru, Chorale.
+L'ordre à l'écran suit celui de la surface — rien à retenir.
 
 ### Rétro-éclairage couleur (le fond de scène)
 
