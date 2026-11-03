@@ -4,25 +4,25 @@
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>5.3.0</Version>
-  <Author>Fabrice</Author>
+  <Author>User00</Author>
  </Creator>
  <Engine>
   <InputOutputMap>
    <BeatGenerator BeatType="Internal" BPM="120"/>
    <NetworkServer Type="Web" AutoStart="True"/>
    <Universe Name="Psalmo" ID="0">
-    <Output Plugin="ArtNet" UID="192.168.1.104" Line="8">
-     <PluginParameters outputIP="192.168.1.20" outputUni="1"/>
+    <Output Plugin="ArtNet" Name="192.168.7.105" UID="" Line="5">
+     <PluginParameters outputIP="192.168.7.20" outputUni="1"/>
     </Output>
    </Universe>
    <Universe Name="USB (Salle)" ID="1">
-    <Output Plugin="DMX USB" UID="DMX USB PRO - DMX Output 1 - (S/N: EN507410)" Line="0">
+    <Output Plugin="DMX USB" Name="DMX USB PRO - DMX Output 1 - (S/N: EN507410)" UID="" Line="0">
      <PluginParameters UniverseChannels="125"/>
     </Output>
    </Universe>
    <Universe Name="MIDI Input" ID="2">
-    <Input Plugin="MIDI" UID="X-TOUCH COMPACT" Line="0"/>
-    <Feedback Plugin="MIDI" UID="X-TOUCH COMPACT" Line="1"/>
+    <Input Plugin="MIDI" Name="X-TOUCH COMPACT" UID="USB\VID_1397:PID_00B2:MI_00\A:1D5558B0:0:0000" Line="0"/>
+    <Feedback Plugin="MIDI" Name="X-TOUCH COMPACT" UID="USB\VID_1397:PID_00B2:MI_00\A:1D5558B0:0:0000" Line="1"/>
    </Universe>
   </InputOutputMap>
   <Fixture>
@@ -506,12 +506,6 @@
    <ValueStyle>0</ValueStyle>
    <Grid Width="7" Height="4" Depth="5" Units="0" POV="1"/>
    <StageItem>3</StageItem>
-   <FxItem ID="8" XPos="300" YPos="56.4571" ZPos="650" XRot="300"/>
-   <FxItem ID="9" XPos="1540" YPos="56.4571" ZPos="650" XRot="300"/>
-   <FxItem ID="10" XPos="2780" YPos="56.4571" ZPos="650" XRot="300"/>
-   <FxItem ID="11" XPos="4020" YPos="56.4571" ZPos="650" XRot="300"/>
-   <FxItem ID="12" XPos="5260" YPos="56.4571" ZPos="650" XRot="300"/>
-   <FxItem ID="13" XPos="6500" YPos="56.4571" ZPos="650" XRot="300"/>
    <FxItem ID="0" XPos="300" YPos="56.4571" ZPos="2800" XRot="180"/>
    <FxItem ID="1" XPos="1185.71" YPos="56.4571" ZPos="2800" XRot="180"/>
    <FxItem ID="2" XPos="2071.43" YPos="56.4571" ZPos="2800" XRot="180"/>
@@ -520,9 +514,15 @@
    <FxItem ID="5" XPos="4728.57" YPos="56.4571" ZPos="2800" XRot="180"/>
    <FxItem ID="6" XPos="5614.29" YPos="56.4571" ZPos="2800" XRot="180"/>
    <FxItem ID="7" XPos="6500" YPos="56.4571" ZPos="2800" XRot="180"/>
-   <FxItem ID="22" XPos="900" YPos="2785.92" ZPos="6000"/>
-   <FxItem ID="21" XPos="3100" YPos="2785.92" ZPos="6000"/>
+   <FxItem ID="8" XPos="300" YPos="56.4571" ZPos="650" XRot="300"/>
+   <FxItem ID="9" XPos="1540" YPos="56.4571" ZPos="650" XRot="300"/>
+   <FxItem ID="10" XPos="2780" YPos="56.4571" ZPos="650" XRot="300"/>
+   <FxItem ID="11" XPos="4020" YPos="56.4571" ZPos="650" XRot="300"/>
+   <FxItem ID="12" XPos="5260" YPos="56.4571" ZPos="650" XRot="300"/>
+   <FxItem ID="13" XPos="6500" YPos="56.4571" ZPos="650" XRot="300"/>
    <FxItem ID="20" XPos="5000" YPos="2785.92" ZPos="6000"/>
+   <FxItem ID="21" XPos="3100" YPos="2785.92" ZPos="6000"/>
+   <FxItem ID="22" XPos="900" YPos="2785.92" ZPos="6000"/>
   </Monitor>
  </Engine>
  <VirtualConsole>
@@ -531,7 +531,7 @@
     <BackgroundColor>4280558628</BackgroundColor>
     <Font>Roboto Condensed,16,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
    </Appearance>
-   <WindowState Visible="True" X="0" Y="0" Width="1800" Height="784"/>
+   <WindowState Visible="True" X="0" Y="0" Width="1400" Height="784"/>
    <AllowResize>False</AllowResize>
    <ShowHeader>False</ShowHeader>
    <ShowEnableButton>True</ShowEnableButton>
